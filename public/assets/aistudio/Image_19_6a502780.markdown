@@ -1,0 +1,253 @@
+---
+name: Aether Civic
+colors:
+  surface: '#faf8ff'
+  surface-dim: '#d2d9f4'
+  surface-bright: '#faf8ff'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#f2f3ff'
+  surface-container: '#eaedff'
+  surface-container-high: '#e2e7ff'
+  surface-container-highest: '#dae2fd'
+  on-surface: '#131b2e'
+  on-surface-variant: '#434656'
+  inverse-surface: '#283044'
+  inverse-on-surface: '#eef0ff'
+  outline: '#747687'
+  outline-variant: '#c3c5d8'
+  surface-tint: '#054cec'
+  primary: '#003bbe'
+  on-primary: '#ffffff'
+  primary-container: '#1150ef'
+  on-primary-container: '#d6dcff'
+  inverse-primary: '#b7c4ff'
+  secondary: '#2a5caf'
+  on-secondary: '#ffffff'
+  secondary-container: '#79a5fd'
+  on-secondary-container: '#00397f'
+  tertiary: '#005539'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#00704c'
+  on-tertiary-container: '#6af7b9'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#dde1ff'
+  primary-fixed-dim: '#b7c4ff'
+  on-primary-fixed: '#001452'
+  on-primary-fixed-variant: '#0038b6'
+  secondary-fixed: '#d8e2ff'
+  secondary-fixed-dim: '#aec6ff'
+  on-secondary-fixed: '#001a42'
+  on-secondary-fixed-variant: '#004395'
+  tertiary-fixed: '#6ffbbe'
+  tertiary-fixed-dim: '#4edea3'
+  on-tertiary-fixed: '#002113'
+  on-tertiary-fixed-variant: '#005236'
+  background: '#faf8ff'
+  on-background: '#131b2e'
+  surface-variant: '#dae2fd'
+typography:
+  display-hero:
+    fontFamily: Playfair Display
+    fontSize: 56px
+    fontWeight: '700'
+    lineHeight: 64px
+    letterSpacing: 0.04em
+  display-hero-mobile:
+    fontFamily: Playfair Display
+    fontSize: 36px
+    fontWeight: '700'
+    lineHeight: 44px
+    letterSpacing: 0.02em
+  headline-lg:
+    fontFamily: Playfair Display
+    fontSize: 36px
+    fontWeight: '700'
+    lineHeight: 44px
+    letterSpacing: 0.03em
+  headline-lg-mobile:
+    fontFamily: Playfair Display
+    fontSize: 28px
+    fontWeight: '700'
+    lineHeight: 36px
+    letterSpacing: 0.02em
+  headline-md:
+    fontFamily: Playfair Display
+    fontSize: 26px
+    fontWeight: '600'
+    lineHeight: 34px
+    letterSpacing: 0.02em
+  headline-sm:
+    fontFamily: Playfair Display
+    fontSize: 20px
+    fontWeight: '600'
+    lineHeight: 28px
+    letterSpacing: 0.01em
+  body-lg:
+    fontFamily: Archivo Narrow
+    fontSize: 18px
+    fontWeight: '400'
+    lineHeight: 28px
+    letterSpacing: 0em
+  body-md:
+    fontFamily: Archivo Narrow
+    fontSize: 15px
+    fontWeight: '400'
+    lineHeight: 22px
+    letterSpacing: 0em
+  body-sm:
+    fontFamily: Archivo Narrow
+    fontSize: 13px
+    fontWeight: '400'
+    lineHeight: 18px
+    letterSpacing: 0em
+  label-lg:
+    fontFamily: Archivo Narrow
+    fontSize: 14px
+    fontWeight: '600'
+    lineHeight: 18px
+    letterSpacing: 0.05em
+  label-md:
+    fontFamily: Archivo Narrow
+    fontSize: 12px
+    fontWeight: '600'
+    lineHeight: 16px
+    letterSpacing: 0.06em
+  label-sm:
+    fontFamily: Archivo Narrow
+    fontSize: 11px
+    fontWeight: '700'
+    lineHeight: 14px
+    letterSpacing: 0.08em
+rounded:
+  sm: 0.5rem
+  DEFAULT: 1rem
+  md: 1.5rem
+  lg: 2rem
+  xl: 3rem
+  full: 9999px
+spacing:
+  gutter: 1.5rem
+  gutter-mobile: 1rem
+  margin: 3rem
+  margin-mobile: 1.25rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2.5rem
+---
+
+## Brand & Style
+
+This design system expresses a serene, elevated civic atmosphere tailored for structured institutional living—universities, dormitories, and residential communities. It shifts the perception of grievance filing from bureaucratic friction to luminous clarity, transparent governance, and calm accountability.
+
+The aesthetic philosophy balances **Atmospheric Glassmorphism** with an authoritative **Modern Editorial** structure:
+- **Atmospheric & Airy**: Emulates ascending sky views through vertical gradients, soft luminous focal blurs, and expansive breathing room.
+- **Editorial Authority**: High-contrast, stately serif headlines lend gravity and institutional trust to student and resident concerns.
+- **Floating Architecture**: Translucent, frosted glass navigation and control surfaces float above sky layers, transitioning gracefully into opaque, pristine white workspace sheets for functional density and legibility.
+- **Pill Geometry**: Fully rounded containers, tags, and actions soften procedural tension, encouraging participation and collaborative resolution.
+
+## Colors
+
+The palette mirrors a vertical slice of high-altitude daylight, supported by clinical functional tones for dispute triage and ticket resolutions.
+
+### Atmospheric Foundations
+- **Deep Royal Sky (`#1150ef`)**: Anchor point for global headers, brand-level signifiers, primary CTAs, and top-tier navigation.
+- **Vivid Sky (`#2b70f7`)**: Interactive hover states, link highlights, and directional cues.
+- **Soft Sky (`#76a2fa`)**: Supporting accents, light borders on glass elements, and atmospheric halo glows.
+- **Pale Cloud (`#b9cffd`)**: Subtle dividers, disabled pill backgrounds, and gradient mid-stops.
+- **Ice Mist (`#eef4ff`)**: Canvas base tint for interactive hover rows, callout containers, and secondary card backgrounds.
+- **Clean White (`#ffffff`)**: Surface sheets, elevated cards, active navigation chips, and high-readability text on dark bands.
+
+### Neutrals & Legibility
+- **Neutral Dark (`#0f172a`)**: Deep slate for high-contrast typography on light sheets and cards.
+- **Slate Muted (`#64748b`)**: Secondary body copy, timestamps, metadata keys, and non-active icons.
+
+### Status Indicators
+- **Emerald Success (`#10b981`)**: Resolved tickets, verified resident badges, and affirmative states.
+- **Amber Pending (`#f59e0b`)**: In-review queries, escalated complaints, and priority warnings.
+- **Rose Urgent (`#ef4444`)**: Critical utility breakdowns, safety alerts, and overdue escalations.
+
+### Background Gradient Rule
+The root canvas applies a continuous vertical gradient starting at Deep Royal Sky (`#1150ef`), traveling through Soft Sky (`#76a2fa`) and Pale Cloud (`#b9cffd`), terminating in Clean White (`#ffffff`). Overlaid across this are four hairline guides (`rgba(255, 255, 255, 0.12)`) set precisely at `5%`, `35%`, `65%`, and `95%` viewport width.
+
+## Typography
+
+The typography couples the stately prestige of traditional academic institutions with the functional density of high-throughput operational software.
+
+- **Editorial Headings (`Playfair Display`)**: Utilized strictly in uppercase or bold editorial title casing for main stage titles, hero banners, sheet headers, and modal titles. Conveys high governance standards and legitimacy.
+- **Functional Grotesque (`Archivo Narrow`)**: Applied across all functional body copy, telemetry rows, status chips, form labels, and interaction triggers. The compact horizontal footprint allows dense issue tracking without visual crowding.
+- **Typographic Hierarchy**:
+  - All labels, category indicators, and status tags must utilize `text-transform: uppercase` with wide letter spacing (`0.05em` to `0.08em`).
+  - Ticket IDs, time deltas, and upvote counters use numeric tabulations (`font-variant-numeric: tabular-nums`) via Archivo.
+
+## Layout & Spacing
+
+The structural layout relies on a dual-phase canvas: a spacious skyward atmospheric header region that descends into an anchored 12-column workspace sheet.
+
+### Grid & Canvas Structure
+- **Global Canvas**: Full-bleed background containing the vertical blue-to-white gradient, framed by four faint vertical gridlines positioned at fixed screen widths: `5%`, `35%`, `65%`, and `95%`.
+- **Top Canopy (Sky Band)**: Spans the top `260px` to `340px` of the viewport, hosting the floating frosted glass navigation pill, quick metrics, and workspace identity selectors.
+- **Main Operational Sheet**: A central container with an elevated surface that overlaps the sky gradient. Bound to a 12-column responsive grid on desktop with a maximum content width of `1280px`.
+
+### Responsive Breakpoints
+- **Mobile (< 768px)**: 4 columns. Outer margin `1.25rem`, gutter `1rem`. Floating glass bar collapses to fixed bottom pill bar or compact glass top-bar. Workspace sheet corners flatten slightly to `1.5rem`.
+- **Tablet (768px - 1024px)**: 8 columns. Outer margin `2rem`, gutter `1.25rem`. 
+- **Desktop (> 1024px)**: 12 columns. Outer margin `3rem`, gutter `1.5rem`.
+
+## Elevation & Depth
+
+Visual depth is achieved through optical translucency, layered environmental light, and broad, diffuse shadows rather than sharp dark offsets.
+
+### Environmental Depth Tiers
+1. **Atmospheric Bed (Level 0)**: The base sky gradient background with large diffuse blurred light spots (`radial-gradient`, `filter: blur(80px)`) evoking passing cloud highlights.
+2. **Frosted Glass Floating Plane (Level 1)**: Floating toolbars and header pills. Constructed with `background: rgba(255, 255, 255, 0.20)`, backdrop blur of `16px` (`backdrop-filter: blur(16px)`), a fine structural border `1px solid rgba(255, 255, 255, 0.35)`, and a soft sky-tinted ambient glow `0 12px 32px -4px rgba(17, 80, 239, 0.15)`.
+3. **Workspace Sheet (Level 2)**: The core content sheet housing feeds, triage lists, and administrative boards. Solid opaque white (`#ffffff`) resting on the sky gradient with an ambient downward roll: `0 24px 48px -12px rgba(15, 23, 42, 0.08), 0 4px 12px 0 rgba(17, 80, 239, 0.04)`.
+4. **Interactive Cards & Modals (Level 3)**: Raised white surfaces layered over the sheet. No hard contrasting outlines; defined instead by micro-borders (`1px solid #eef4ff`), subtle surface brightness transitions, and localized elevation shadows (`0 8px 24px -4px rgba(15, 23, 42, 0.06)`).
+
+## Shapes
+
+The design system enforces a pill-first (`rounded-full`) geometric standard for all small-to-medium interactive components, paired with grand architectural radii for major layout sheets.
+
+### Corner Rules
+- **Interactive Controls**: Buttons, filter chips, navigation bars, search fields, status indicators, and upvote units are strictly fully rounded (`border-radius: 9999px`).
+- **Main Sheet**: The central operational container uses high-radius architectural corners (`border-radius: 2rem` / `rounded-3xl`), evoking a physical floating sheet of cardstock.
+- **Interior Cards**: Nested list cards, ticket panels, and metrics widgets utilize balanced soft curves (`border-radius: 1rem` to `1.25rem`).
+
+## Components
+
+### Floating Navigation Pill
+- **Structure**: Horizontally centered capsule floating `1.5rem` from viewport top.
+- **Surface**: `backdrop-blur-md`, `bg-white/20`, border `1px solid rgba(255, 255, 255, 0.30)`, inner horizontal padding `space-md`, height `48px`.
+- **Items**: Text links in white (`#ffffff`) with subtle hover states.
+- **Active Tab**: Fully opaque white pill (`bg-white`), dark text (`#0f172a`), with shadow `0 4px 12px rgba(0, 0, 0, 0.08)`.
+- **Secondary Action (Sign In)**: Outlined pill (`border border-white/60 text-white hover:bg-white/10`).
+
+### Buttons
+- **Primary Button**: `rounded-full`, `bg-[#1150ef] text-white font-semibold`, hover `bg-[#2b70f7]`, active scale `0.98`. Padding `0.625rem 1.5rem`.
+- **Glass / Atmospheric Button**: `rounded-full`, `bg-white/20 text-white backdrop-blur-md border border-white/30`, hover `bg-white/30`.
+- **Secondary Button**: `rounded-full`, `bg-[#eef4ff] text-[#1150ef]`, hover `bg-[#b9cffd]/40`.
+
+### Issue & Status Badges
+- **Shape**: Compact `rounded-full` pill with `padding: 0.25rem 0.75rem`.
+- **Resolved**: `bg-[#10b981]/10 text-[#10b981] border border-[#10b981]/20`.
+- **In Progress / Pending**: `bg-[#f59e0b]/10 text-[#f59e0b] border border-[#f59e0b]/20`.
+- **Escalated / Critical**: `bg-[#ef4444]/10 text-[#ef4444] border border-[#ef4444]/20`.
+- **Typography**: Label Small, uppercase, bold tracking.
+
+### Community Upvote Counter (Reddit-Style)
+- **Structure**: Vertical or horizontal pill unit (`rounded-full bg-[#eef4ff] text-[#0f172a] border border-[#b9cffd]/40`).
+- **Interaction**: Chevron up/down icons bounding tabular numeric count (`Archivo Narrow`, weight 600).
+- **Upvoted State**: Counter and arrow tint to Deep Royal Blue (`#1150ef`), container fills with `rgba(17, 80, 239, 0.08)`.
+
+### Input Fields
+- **Search & Filter Inputs**: `rounded-full bg-[#f8faff] border border-[#b9cffd]/60 px-5 py-2.5 text-[#0f172a] focus:bg-white focus:border-[#1150ef] focus:ring-4 focus:ring-[#1150ef]/10 outline-none`.
+- **Detailed Form Inputs**: Form text areas maintain a softer `rounded-2xl` for ergonomic multi-line grievance entry while matching field border tones.
+
+### Ticket Cards
+- **Architecture**: Contained within the white sheet. Frameless or micro-bordered (`1px solid #eef4ff`), crisp white background (`#ffffff`), `rounded-2xl`, internal padding `space-lg`.
+- **Hover Behavior**: Subtle lift via shadow change (`0 12px 28px -6px rgba(15, 23, 42, 0.06)`), border shift to `#b9cffd`.
+- **Layout**: Left column houses the vertical upvote module; middle column hosts the category tag, headline (`Playfair Display`, semibold), and meta timestamp; right column terminates in the status badge and assignee avatar.

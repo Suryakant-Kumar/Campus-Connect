@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface":"#faf8ff","on-tertiary-fixed-variant":"#005236","secondary-fixed":"#d8e2ff","background":"#faf8ff","on-tertiary":"#ffffff","primary-container":"#1150ef","on-background":"#131b2e","on-secondary-container":"#00397f","tertiary":"#005539","primary":"#003bbe","primary-fixed":"#dde1ff","on-secondary-fixed":"#001a42","surface-container-highest":"#dae2fd","surface-dim":"#d2d9f4","on-secondary-fixed-variant":"#004395","on-primary-fixed-variant":"#0038b6","error-container":"#ffdad6","on-secondary":"#ffffff","on-error-container":"#93000a","on-tertiary-container":"#6af7b9","on-primary-fixed":"#001452","outline":"#747687","surface-container-lowest":"#ffffff","tertiary-fixed-dim":"#4edea3","surface-container":"#eaedff","tertiary-fixed":"#6ffbbe","on-surface":"#131b2e","on-primary":"#ffffff","error":"#ba1a1a","secondary-fixed-dim":"#aec6ff","on-primary-container":"#d6dcff","surface-tint":"#054cec","surface-container-high":"#e2e7ff","tertiary-container":"#00704c","inverse-on-surface":"#eef0ff","on-error":"#ffffff","on-tertiary-fixed":"#002113","primary-fixed-dim":"#b7c4ff","surface-container-low":"#f2f3ff","secondary":"#2a5caf","inverse-primary":"#b7c4ff","outline-variant":"#c3c5d8","inverse-surface":"#283044","surface-variant":"#dae2fd","on-surface-variant":"#434656","secondary-container":"#79a5fd","surface-bright":"#faf8ff"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","margin-mobile":"1.25rem","gutter":"1.5rem","gutter-mobile":"1rem","margin":"3rem","space-xl":"2.5rem","space-md":"1rem","space-lg":"1.5rem","space-sm":"0.5rem"},"fontFamily":{"label-md":["Archivo Narrow"],"headline-lg":["Playfair Display"],"body-md":["Archivo Narrow"],"display-hero-mobile":["Playfair Display"],"label-sm":["Archivo Narrow"],"label-lg":["Archivo Narrow"],"display-hero":["Playfair Display"],"body-lg":["Archivo Narrow"],"body-sm":["Archivo Narrow"],"headline-md":["Playfair Display"],"headline-lg-mobile":["Playfair Display"],"headline-sm":["Playfair Display"]},"fontSize":{"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"600"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"0.03em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"18px","letterSpacing":"0.05em","fontWeight":"600"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"0.04em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"headline-md":["26px",{"lineHeight":"34px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"0.02em","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"0.01em","fontWeight":"600"}]}}}};</script></head><body class="min-h-screen relative font-body-md text-body-md text-on-surface bg-gradient-to-b from-primary via-secondary to-surface"><div class="pointer-events-none fixed inset-0 z-0 overflow-hidden"><div class="absolute left-[5%] top-0 bottom-0 w-px bg-white/10"></div><div class="absolute left-[35%] top-0 bottom-0 w-px bg-white/10"></div><div class="absolute left-[65%] top-0 bottom-0 w-px bg-white/10"></div><div class="absolute left-[95%] top-0 bottom-0 w-px bg-white/10"></div><div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-white/15 blur-3xl"></div><div class="absolute top-1/4 -right-32 w-96 h-96 rounded-full bg-secondary-fixed/20 blur-3xl"></div></div><header class="fixed top-0 left-0 w-full z-50 pt-space-md"><div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between"><div class="w-full h-14 bg-white/20 backdrop-blur-md border border-white/30 rounded-full px-space-md shadow-[0_12px_32px_-4px_rgba(17,80,239,0.15)] flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm pl-space-xs"><img alt="CampusConnect Brand Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wh1j0OBj4uV2F2aH2YRu9elK1aLk7uNqMWIp9XRjePAiCFFjut72AuXC0D7ZrbloFuiPKenncpXAX1kFkCrhQZfWX2ZsjE2f1_kBBYF82xrJ3W68psb4DgwIoLLmfFwP5j7Bd0tKQVQqx1-HMWjaoikr6sSSDMQ3-CgVXHIi3gHbNyi0NUncHZtcjZ17x3ML9xwgp83sOjKv12Y97bKCHVgWFjNml8AK5bcspKmCgr0j_XY7ubsH5CBw"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-white tracking-tight uppercase leading-none">CampusConnect</span><span class="font-label-sm text-label-sm text-white/80 tracking-widest leading-none mt-0.5">iitd.campusconnect.com</span></div></div><nav class="hidden xl:flex items-center gap-space-xs bg-white/10 p-1 rounded-full" data-active-classes="bg-surface-container-lowest text-primary font-bold shadow-sm"><a aria-current="page" class="px-space-md py-1.5 rounded-full transition-all bg-surface-container-lowest text-primary font-bold shadow-sm" data-path="live-issues" href="#">Live Issues</a><a class="px-space-md py-1.5 rounded-full font-label-lg text-label-lg text-white hover:bg-white/20 hover:text-white transition-all" data-path="resolved-history" href="#">Resolved History</a><a class="px-space-md py-1.5 rounded-full font-label-lg text-label-lg text-white hover:bg-white/20 hover:text-white transition-all" data-path="admin-suite" href="#">Admin Suite</a><a class="px-space-md py-1.5 rounded-full font-label-lg text-label-lg text-white hover:bg-white/20 hover:text-white transition-all" data-path="worker-tasks" href="#">Worker Tasks</a><a class="px-space-md py-1.5 rounded-full font-label-lg text-label-lg text-white hover:bg-white/20 hover:text-white transition-all" data-path="campuses-directory" href="#">Campuses Directory</a></nav><div class="flex items-center gap-space-sm pr-space-xs"><button class="flex items-center gap-1 rounded-full bg-surface-container-lowest text-primary px-space-md py-2 font-label-lg text-label-lg font-semibold hover:bg-surface-container-low transition-all shadow-md" type="button"><span class="material-symbols-outlined text-lg leading-none">add</span><span>Raise Issue</span></button><button class="relative p-2 rounded-full text-white hover:bg-white/10 transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-white/50"></span></button><div class="relative flex items-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-white/60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEnuocZixhsRbCoOLvsCJqk452ahLjqpaiBbM8iER-hmjxfco8AVDHcxIl5UTlbC4ALKs_7madrdjmyGyfdsp3t_8SR8kfUTrEf9C5QJ2mQARbLQWBtdKy4RUgx1qyisJRnFlKsgDNeFUqNS2edzGlelIgZQ2ukbvelleJIb3IKaaSkPUWQpOOHhfoxI247JFgldj6NVE5_R2Tt0fJsWXyLk7084P4uyWYHOqkFDmAU0aIUNfn7ch-"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim ring-2 ring-white"></span></div></div></div></div></header><main class="relative z-10 w-full pt-20"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin pt-space-lg pb-margin"><div class="min-h-[calc(100vh-14rem)] w-full bg-surface-container-lowest/95 backdrop-blur-xl rounded-xl shadow-[0_24px_48px_-12px_rgba(15,23,42,0.08),0_4px_12px_0_rgba(17,80,239,0.04)] border border-white/60 p-space-md md:p-space-xl"><div class="flex flex-col w-full">
+<div class="relative w-full pb-space-xl">
+<div class="relative z-10 flex flex-col items-center justify-between gap-space-md mb-space-lg text-center md:text-left md:flex-row">
+<div class="flex flex-col">
+<div class="flex items-center justify-center md:justify-start gap-space-xs mb-1">
+<span class="inline-block w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">Institutional Onboarding</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Register Your Campus Jurisdiction</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+          Establish decentralized civic accountability, auto-routed grievance workflows, and a branded resolution hub in under three minutes.
+        </p>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-high/60 backdrop-blur-md p-1.5 rounded-full shadow-sm">
+<span class="px-space-md py-1 rounded-full font-label-md text-label-md bg-surface-container-lowest text-primary shadow-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">security</span> Verified .edu / .org Gateway
+        </span>
+<span class="px-space-md py-1 font-label-md text-label-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">bolt</span> Instant Provisioning
+        </span>
+</div>
+</div>
+<!-- Stepper Indicator -->
+<div class="w-full max-w-3xl mx-auto mb-space-xl">
+<div class="relative flex items-center justify-between">
+<div class="absolute top-1/2 left-0 right-0 h-1 bg-surface-container-highest -translate-y-1/2 -z-0 rounded-full"></div>
+<div class="absolute top-1/2 left-0 h-1 bg-primary -translate-y-1/2 -z-0 rounded-full transition-all duration-500 w-0" id="step-progress-bar"></div>
+<!-- Step 1 Dot -->
+<button class="relative z-10 flex items-center gap-space-xs group focus:outline-none" id="step-btn-1" onclick="goToStep(1)" type="button">
+<span class="w-10 h-10 rounded-full bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center shadow-md transition-all ring-4 ring-primary-fixed" id="step-dot-1">1</span>
+<span class="hidden sm:inline font-label-md text-label-md font-bold text-primary" id="step-txt-1">Campus Identity</span>
+</button>
+<!-- Step 2 Dot -->
+<button class="relative z-10 flex items-center gap-space-xs group focus:outline-none" id="step-btn-2" onclick="goToStep(2)" type="button">
+<span class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface-variant font-label-lg text-label-lg flex items-center justify-center transition-all ring-4 ring-surface-container-lowest" id="step-dot-2">2</span>
+<span class="hidden sm:inline font-label-md text-label-md text-on-surface-variant" id="step-txt-2">Verification</span>
+</button>
+<!-- Step 3 Dot -->
+<button class="relative z-10 flex items-center gap-space-xs group focus:outline-none" id="step-btn-3" onclick="goToStep(3)" type="button">
+<span class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface-variant font-label-lg text-label-lg flex items-center justify-center transition-all ring-4 ring-surface-container-lowest" id="step-dot-3">3</span>
+<span class="hidden sm:inline font-label-md text-label-md text-on-surface-variant" id="step-txt-3">Domain &amp; Lead Admin</span>
+</button>
+</div>
+</div>
+<!-- Main Workspace Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Interactive Form Container (Left 7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl shadow-xl p-space-lg md:p-space-xl transition-all" id="form-card">
+<!-- STEP 1: Campus Identity -->
+<div class="space-y-space-lg transition-all duration-300" id="step-panel-1">
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Stage 01</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-0.5">Define Your Institutional Identity</h2>
+</div>
+<span class="material-symbols-outlined text-3xl text-secondary">account_balance</span>
+</div>
+<!-- Campus Name -->
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface font-semibold" for="campus-name-input">
+              Campus or Institution Full Name <span class="text-error">*</span>
+</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">domain</span>
+<input class="w-full pl-12 pr-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary focus:outline-none transition-all shadow-inner" id="campus-name-input" oninput="syncPreview(this.value)" placeholder="e.g. Stanford University, Ashoka Campus, St. Mary Dorms" type="text" value="Indian Institute of Technology Delhi"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">This formal title appears across verification emails, printable posters, and resident dashboards.</p>
+</div>
+<!-- Campus Category Pills -->
+<div class="space-y-2">
+<label class="block font-label-md text-label-md text-on-surface font-semibold">Campus Category</label>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-xs" id="category-pills">
+<button class="cat-pill active flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-full font-label-md text-label-md font-semibold bg-primary text-on-primary shadow-md transition-all" onclick="selectCategory(this, 'University &amp; Research')" type="button">
+<span class="material-symbols-outlined text-base">school</span> University
+              </button>
+<button class="cat-pill flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-full font-label-md text-label-md text-on-surface-variant bg-surface-container-low hover:bg-surface-container transition-all" onclick="selectCategory(this, 'School / K-12')" type="button">
+<span class="material-symbols-outlined text-base">local_library</span> School
+              </button>
+<button class="cat-pill flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-full font-label-md text-label-md text-on-surface-variant bg-surface-container-low hover:bg-surface-container transition-all" onclick="selectCategory(this, 'Hostel &amp; Residential Hall')" type="button">
+<span class="material-symbols-outlined text-base">hotel</span> Hostel / Hall
+              </button>
+<button class="cat-pill flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-full font-label-md text-label-md text-on-surface-variant bg-surface-container-low hover:bg-surface-container transition-all" onclick="selectCategory(this, 'Paying Guest Facility')" type="button">
+<span class="material-symbols-outlined text-base">home_work</span> PG Co-living
+              </button>
+<button class="cat-pill flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-full font-label-md text-label-md text-on-surface-variant bg-surface-container-low hover:bg-surface-container transition-all" onclick="selectCategory(this, 'Residential Housing Society')" type="button">
+<span class="material-symbols-outlined text-base">apartment</span> Residential
+              </button>
+<button class="cat-pill flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-full font-label-md text-label-md text-on-surface-variant bg-surface-container-low hover:bg-surface-container transition-all" onclick="selectCategory(this, 'Municipal Community')" type="button">
+<span class="material-symbols-outlined text-base">other_houses</span> Other Space
+              </button>
+</div>
+</div>
+<!-- City & Coordinates -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface font-semibold" for="city-input">
+                City / Metropolitan Hub <span class="text-error">*</span>
+</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">location_on</span>
+<input class="w-full pl-12 pr-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary focus:outline-none transition-all shadow-inner" id="city-input" oninput="document.getElementById('preview-city').innerText = this.value || 'Location Pending';" type="text" value="New Delhi, Hauz Khas"/>
+</div>
+</div>
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface font-semibold" for="est-res-input">
+                Estimated Enrolled Population
+              </label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">group</span>
+<select class="w-full pl-12 pr-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary focus:outline-none transition-all shadow-inner" id="est-res-input">
+<option>100 – 500 Residents / Students</option>
+<option selected="">500 – 2,500 Population</option>
+<option>2,500 – 10,000 Large Campus</option>
+<option>10,000+ Multi-unit Macro Zone</option>
+</select>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-end">
+<button class="flex items-center gap-2 rounded-full bg-primary text-on-primary px-space-xl py-3 font-label-lg text-label-lg font-semibold hover:bg-primary-container shadow-md transition-all active:scale-95" onclick="goToStep(2)" type="button">
+<span>Continue to Verification</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- STEP 2: Institutional Authority Verification -->
+<div class="space-y-space-lg hidden transition-all duration-300" id="step-panel-2">
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Stage 02</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-0.5">Authorization &amp; Authority Desk</h2>
+</div>
+<span class="material-symbols-outlined text-3xl text-secondary">verified_user</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-2xl">info</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              CampusConnect operates under strict student-faculty transparency pacts. Campus registries must be authorized by a campus rector, dean, student union president, or building estate supervisor.
+            </p>
+</div>
+<div class="space-y-space-md">
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface font-semibold" for="doc-type-select">
+                Institutional Credential Validation Type
+              </label>
+<select class="w-full px-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:ring-2 focus:ring-primary focus:outline-none shadow-inner" id="doc-type-select">
+<option>Campus Domain Master DNS Verification (.ac.in / .edu)</option>
+<option>Registrar Delegation Letter / Letterhead</option>
+<option>Student Union Affiliation Charter</option>
+<option>Residential Society Certificate of Incorporation</option>
+</select>
+</div>
+<!-- Upload Area -->
+<div class="relative p-space-lg rounded-xl bg-surface-container-low/70 border-2 border-dashed border-outline-variant flex flex-col items-center text-center group hover:bg-surface-container transition-all">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-primary mb-space-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">upload_file</span>
+</div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Upload Accreditation or Dean Authorization Letter</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">PDF, JPG, or signed PNG up to 15MB. Automatic OCR parsing active.</span>
+<input class="absolute inset-0 opacity-0 cursor-pointer" onchange="showFileFeedback(this)" type="file"/>
+<div class="mt-space-sm hidden px-3 py-1 bg-tertiary-fixed text-on-tertiary-fixed rounded-full font-label-sm text-label-sm font-semibold items-center gap-1" id="file-feedback">
+<span class="material-symbols-outlined text-xs">check_circle</span> Authorization_IITD_DeanOffice.pdf attached
+              </div>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<button class="flex items-center gap-1.5 rounded-full bg-surface-container text-on-surface-variant px-space-lg py-2.5 font-label-lg text-label-lg hover:bg-surface-container-high transition-all" onclick="goToStep(1)" type="button">
+<span class="material-symbols-outlined text-base">arrow_back</span>
+<span>Back</span>
+</button>
+<button class="flex items-center gap-2 rounded-full bg-primary text-on-primary px-space-xl py-3 font-label-lg text-label-lg font-semibold hover:bg-primary-container shadow-md transition-all active:scale-95" onclick="goToStep(3)" type="button">
+<span>Continue to Admin &amp; Domain</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- STEP 3: Domain & Admin Profile -->
+<div class="space-y-space-lg hidden transition-all duration-300" id="step-panel-3">
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Stage 03</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-0.5">Admin Profile &amp; Vanity Subdomain</h2>
+</div>
+<span class="material-symbols-outlined text-3xl text-tertiary">link</span>
+</div>
+<!-- Subdomain Generator -->
+<div class="space-y-2">
+<label class="block font-label-md text-label-md text-on-surface font-semibold" for="slug-input">
+              Choose Campus Subdomain Slug <span class="text-error">*</span>
+</label>
+<div class="flex items-stretch rounded-lg bg-surface-container-low shadow-inner overflow-hidden focus-within:ring-2 focus-within:ring-primary">
+<div class="flex items-center px-4 bg-surface-container text-on-surface-variant font-label-md text-label-md font-bold select-none">
+                https://
+              </div>
+<input class="w-full px-3 py-3 bg-transparent text-primary font-label-lg text-label-lg font-bold focus:outline-none" id="slug-input" oninput="updateSlug(this.value)" placeholder="slug" type="text" value="iitd"/>
+<div class="flex items-center px-4 bg-surface-container text-on-surface-variant font-label-md text-label-md font-bold select-none">
+                .campusconnect.com
+              </div>
+</div>
+<div class="flex items-center justify-between px-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-tertiary">check_circle</span> Slug Available: High-speed resolution cluster ready.
+              </span>
+<span class="font-label-sm text-label-sm font-bold text-primary px-2 py-0.5 rounded-full bg-secondary-fixed" id="domain-slug-live">
+                iitd.campusconnect.com
+              </span>
+</div>
+</div>
+<!-- Lead Admin Persona -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-xs">
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface font-semibold" for="admin-name">
+                Lead Registrar / Admin Name <span class="text-error">*</span>
+</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">badge</span>
+<input class="w-full pl-12 pr-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary focus:outline-none transition-all shadow-inner" id="admin-name" oninput="document.getElementById('preview-lead-admin').innerText = this.value || 'Dean of Student Affairs';" type="text" value="Dr. Ananya Sundaram"/>
+</div>
+</div>
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface font-semibold" for="admin-email">
+                Institutional Work Email <span class="text-error">*</span>
+</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">mail</span>
+<input class="w-full pl-12 pr-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary focus:outline-none transition-all shadow-inner" id="admin-email" type="email" value="dean.affairs@admin.iitd.ac.in"/>
+</div>
+</div>
+</div>
+<!-- Password & Key -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface font-semibold" for="admin-password">
+                Secure Master Password <span class="text-error">*</span>
+</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">lock</span>
+<input class="w-full pl-12 pr-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary focus:outline-none transition-all shadow-inner" id="admin-password" type="password" value="••••••••••••••••"/>
+</div>
+</div>
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface font-semibold" for="routing-scheme">
+                Initial Worker Dispatch Scheme
+              </label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">alt_route</span>
+<select class="w-full pl-12 pr-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary focus:outline-none transition-all shadow-inner" id="routing-scheme">
+<option selected="">Decentralized Hostel-Wise Triage</option>
+<option>Central Works Dept (Single Queue)</option>
+<option>Hybrid Dean + Student Council Desk</option>
+</select>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<button class="flex items-center gap-1.5 rounded-full bg-surface-container text-on-surface-variant px-space-lg py-2.5 font-label-lg text-label-lg hover:bg-surface-container-high transition-all" onclick="goToStep(2)" type="button">
+<span class="material-symbols-outlined text-base">arrow_back</span>
+<span>Back</span>
+</button>
+<button class="flex items-center gap-2 rounded-full bg-tertiary text-on-tertiary px-space-xl py-3 font-label-lg text-label-lg font-bold hover:bg-tertiary-container shadow-lg transition-all active:scale-95" onclick="completeRegistration()" type="button">
+<span class="material-symbols-outlined text-base">rocket_launch</span>
+<span>Instantiate Campus Hub</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Live Preview & Live Status Card (Right 5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Interactive Live Identity Capsule -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm relative overflow-hidden">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm border-b border-surface-container-highest">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary">visibility</span> Instant Public Specimen
+            </span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+              Dynamic Staging
+            </span>
+</div>
+<!-- Simulated Campus Banner & Micro Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md space-y-space-md">
+<div class="relative h-28 rounded-lg overflow-hidden bg-primary">
+<img class="w-full h-full object-cover mix-blend-overlay opacity-80" data-alt="An expansive, sunny institutional university quadrangle with stately red-brick neo-classical facades, manicured lawns, tall canopy eucalyptus trees, and Indian students walking briskly between lecture halls under clear blue skies." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8RkDhdr2PPlBIEHYcRzWx5Y6rq1MD1ElUS-vneG42R1g9sJq-enxu-DEQIjVNeP_y5d3EK8naau9jMgymEGmtif9j9Nu4Je__Jx3Uk08SFzcgYZxf7s9tCCTKZaxhwLRmt-HAdcjpY17NltIxknIWcjFEHhsIOEIBoyWf2XiXBdYAIYZ6-j4J_rY6dIwVsBvScrk5JYTGgpNsuRVnMhUi8NW6cxNqZwiKpHW8eBpQeH1X8KSJra3t"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent"></div>
+<div class="absolute bottom-2.5 left-3.5 right-3.5 flex items-end justify-between">
+<div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm font-bold inline-block mb-1" id="preview-badge-cat">
+                    University &amp; Research
+                  </span>
+<h3 class="font-headline-sm text-headline-sm text-white leading-tight drop-shadow-sm truncate max-w-xs" id="preview-campus-name">
+                    Indian Institute of Technology Delhi
+                  </h3>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-primary shadow">
+<span class="material-symbols-outlined text-lg">verified</span>
+</div>
+</div>
+</div>
+<!-- Meta details inside preview -->
+<div class="grid grid-cols-2 gap-space-xs pt-1">
+<div class="bg-surface-container-low p-2 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Jurisdiction</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate block" id="preview-city">New Delhi, Hauz Khas</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Registrar Lead</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate block" id="preview-lead-admin">Dr. Ananya Sundaram</span>
+</div>
+</div>
+<!-- Subdomain pill banner preview -->
+<div class="bg-surface-container-high/60 rounded-full py-2 px-space-md flex items-center justify-between">
+<div class="flex items-center gap-1.5 overflow-hidden">
+<span class="material-symbols-outlined text-primary text-base">link</span>
+<span class="font-label-md text-label-md font-bold text-primary truncate" id="preview-vanity-url">
+                  iitd.campusconnect.com
+                </span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">256-bit SSL</span>
+</div>
+<!-- Resolution SLA Guarantee Gauge -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary">timer</span>
+<div>
+<div class="font-label-sm text-label-sm font-bold text-on-surface">Target Resolution SLA</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Default 48h Escalation Circuit</div>
+</div>
+</div>
+<svg class="w-10 h-10 -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-highest" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-tertiary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="88, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+</div>
+</div>
+</div>
+<!-- Campus Civic Value Proposition Pill List -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md space-y-space-sm">
+<div class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">verified</span> Guaranteed Institutional Protocols
+          </div>
+<div class="space-y-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-tertiary text-base mt-0.5">check_circle</span>
+<span><strong>Tamper-Proof Audit Trail:</strong> Every ticket edit or upvote is permanently ledgered.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-tertiary text-base mt-0.5">check_circle</span>
+<span><strong>Dorm &amp; Department Partitioning:</strong> Custom channels for Nilgiri, Aravali, Jwalamukhi, and Mess Halls.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-tertiary text-base mt-0.5">check_circle</span>
+<span><strong>Anonymous Grievance Option:</strong> Whistleblower protection for ragging and sensitive residential concerns.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Integrated Success Card State Modal Overlay -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-margin-mobile bg-on-surface/40 backdrop-blur-md hidden transition-opacity duration-300" id="success-modal">
+<div class="w-full max-w-2xl bg-surface-container-lowest rounded-xl shadow-2xl p-space-lg md:p-space-xl relative overflow-hidden animate-in fade-in zoom-in-95 duration-300">
+<!-- Ambient decorative background glow -->
+<div class="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-secondary-fixed/40 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-24 -left-24 w-64 h-64 rounded-full bg-tertiary-fixed/40 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 space-y-space-lg">
+<!-- Celebration Header -->
+<div class="flex flex-col items-center text-center space-y-space-xs">
+<div class="w-16 h-16 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center shadow-lg mb-space-xs">
+<span class="material-symbols-outlined text-3xl animate-bounce">check_circle</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary font-bold">Registration Completed &amp; Live</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Your Campus Space is Ready!</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg">
+              The localized civic resolution node has been minted for <strong class="text-on-surface" id="success-campus-title">Indian Institute of Technology Delhi</strong>. All grievance queues and worker rosters are active.
+            </p>
+</div>
+<!-- Vanity Link Box & Noticeboard QR Box -->
+<div class="bg-surface-container-low rounded-xl p-space-md grid grid-cols-1 md:grid-cols-12 gap-space-md items-center">
+<!-- Left Info & Copy Link -->
+<div class="md:col-span-8 space-y-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant block font-semibold">Institutional Vanity URL</span>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest rounded-full p-1.5 shadow-sm">
+<span class="material-symbols-outlined text-primary pl-2 text-lg">link</span>
+<input class="bg-transparent font-label-md text-label-md font-bold text-on-surface w-full focus:outline-none select-all" id="final-vanity-url" readonly="" type="text" value="https://iitd.campusconnect.com"/>
+<button class="flex items-center gap-1 rounded-full bg-primary text-on-primary px-space-md py-1.5 font-label-sm text-label-sm font-semibold hover:bg-primary-container transition-all shadow" id="copy-btn" onclick="copyVanityLink()" type="button">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+<span id="copy-btn-txt">Copy Link</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Share this root link with department heads, hostel wardens, and student representative bodies.
+              </p>
+</div>
+<!-- Right Noticeboard QR Code Badge -->
+<div class="md:col-span-4 flex flex-col items-center justify-center bg-surface-container-lowest rounded-lg p-space-sm text-center shadow-sm">
+<!-- Rendered Vector Styled QR -->
+<div class="p-1.5 bg-white rounded-md shadow-inner flex items-center justify-center">
+<svg class="w-20 h-20 text-on-surface" fill="currentColor" viewbox="0 0 100 100">
+<!-- QR Finder Top-Left -->
+<rect height="28" rx="4" width="28" x="5" y="5"></rect>
+<rect fill="white" height="20" rx="2" width="20" x="9" y="9"></rect>
+<rect height="12" rx="1" width="12" x="13" y="13"></rect>
+<!-- QR Finder Top-Right -->
+<rect height="28" rx="4" width="28" x="67" y="5"></rect>
+<rect fill="white" height="20" rx="2" width="20" x="71" y="9"></rect>
+<rect height="12" rx="1" width="12" x="75" y="13"></rect>
+<!-- QR Finder Bottom-Left -->
+<rect height="28" rx="4" width="28" x="5" y="67"></rect>
+<rect fill="white" height="20" rx="2" width="20" x="9" y="71"></rect>
+<rect height="12" rx="1" width="12" x="13" y="75"></rect>
+<!-- Stylized Data Matrix Dots -->
+<rect height="6" rx="1" width="6" x="38" y="8"></rect>
+<rect height="6" rx="1" width="6" x="48" y="14"></rect>
+<rect height="6" rx="1" width="6" x="38" y="24"></rect>
+<rect height="6" rx="1" width="6" x="56" y="24"></rect>
+<rect class="text-primary" height="8" rx="2" width="8" x="40" y="40"></rect>
+<rect class="text-primary" height="8" rx="2" width="8" x="52" y="40"></rect>
+<rect height="6" rx="1" width="6" x="8" y="42"></rect>
+<rect height="6" rx="1" width="6" x="22" y="48"></rect>
+<rect height="6" rx="1" width="6" x="74" y="44"></rect>
+<rect height="6" rx="1" width="6" x="86" y="54"></rect>
+<rect height="6" rx="1" width="6" x="40" y="60"></rect>
+<rect class="text-primary" height="8" rx="2" width="8" x="52" y="68"></rect>
+<rect height="6" rx="1" width="6" x="68" y="76"></rect>
+<rect height="6" rx="1" width="6" x="82" y="72"></rect>
+<rect height="6" rx="1" width="6" x="82" y="86"></rect>
+<rect height="6" rx="1" width="6" x="40" y="84"></rect>
+</svg>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-on-surface mt-1">Dorm Poster QR</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant scale-90">Print Ready 300DPI</span>
+</div>
+</div>
+<!-- Direct Call to Action Pills -->
+<div class="flex flex-col sm:flex-row items-center justify-center gap-space-sm pt-space-xs">
+<a class="w-full sm:w-auto flex items-center justify-center gap-2 rounded-full bg-primary text-on-primary px-space-xl py-3.5 font-label-lg text-label-lg font-bold hover:bg-primary-container shadow-lg transition-all active:scale-95 text-center" data-path="admin-suite" href="#">
+<span class="material-symbols-outlined text-base">space_dashboard</span>
+<span>Launch Admin Dashboard</span>
+</a>
+<button class="w-full sm:w-auto flex items-center justify-center gap-2 rounded-full bg-secondary-fixed text-on-secondary-fixed px-space-xl py-3.5 font-label-lg text-label-lg font-bold hover:bg-secondary-fixed-dim transition-all shadow-sm" onclick="alert('Student/Resident invitation modal dispatched to enrolled directory.')" type="button">
+<span class="material-symbols-outlined text-base">forward_to_inbox</span>
+<span>Invite Residents / Students</span>
+</button>
+<button class="w-full sm:w-auto px-space-md py-3.5 rounded-full text-on-surface-variant font-label-md text-label-md hover:bg-surface-container transition-all" onclick="closeSuccessModal()" type="button">
+              Edit Setup
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+    let currentStep = 1;
+
+    function goToStep(step) {
+      currentStep = step;
+      
+      // Update Step Panels Visibility
+      document.getElementById('step-panel-1').classList.toggle('hidden', step !== 1);
+      document.getElementById('step-panel-2').classList.toggle('hidden', step !== 2);
+      document.getElementById('step-panel-3').classList.toggle('hidden', step !== 3);
+
+      // Progress bar fill
+      const progressBar = document.getElementById('step-progress-bar');
+      if (step === 1) progressBar.style.width = '0%';
+      if (step === 2) progressBar.style.width = '50%';
+      if (step === 3) progressBar.style.width = '100%';
+
+      // Update Dots and Text
+      [1, 2, 3].forEach(s => {
+        const dot = document.getElementById(`step-dot-${s}`);
+        const txt = document.getElementById(`step-txt-${s}`);
+        if (s <= step) {
+          dot.className = "w-10 h-10 rounded-full bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center shadow-md transition-all ring-4 ring-primary-fixed";
+          if (txt) txt.className = "hidden sm:inline font-label-md text-label-md font-bold text-primary";
+        } else {
+          dot.className = "w-10 h-10 rounded-full bg-surface-container-highest text-on-surface-variant font-label-lg text-label-lg flex items-center justify-center transition-all ring-4 ring-surface-container-lowest";
+          if (txt) txt.className = "hidden sm:inline font-label-md text-label-md text-on-surface-variant";
+        }
+      });
+      window.scrollTo({ top: 120, behavior: 'smooth' });
+    }
+
+    function selectCategory(button, categoryName) {
+      document.querySelectorAll('#category-pills .cat-pill').forEach(btn => {
+        btn.classList.remove('bg-primary', 'text-on-primary', 'shadow-md');
+        btn.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      });
+      button.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+      button.classList.add('bg-primary', 'text-on-primary', 'shadow-md');
+      
+      document.getElementById('preview-badge-cat').innerText = categoryName;
+    }
+
+    function syncPreview(name) {
+      const fallback = "Your Campus Name";
+      const value = name.trim() || fallback;
+      document.getElementById('preview-campus-name').innerText = value;
+      document.getElementById('success-campus-title').innerText = value;
+
+      // Auto slug suggestion if not manually overridden
+      const autoSlug = name.toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 10) || "campus";
+      const slugInput = document.getElementById('slug-input');
+      if (document.activeElement !== slugInput) {
+        slugInput.value = autoSlug;
+        updateSlug(autoSlug);
+      }
+    }
+
+    function updateSlug(val) {
+      const sanitized = val.toLowerCase().replace(/[^a-z0-9-]/g, '') || "campus";
+      const full = `${sanitized}.campusconnect.com`;
+      document.getElementById('domain-slug-live').innerText = full;
+      document.getElementById('preview-vanity-url').innerText = full;
+      document.getElementById('final-vanity-url').value = `https://${full}`;
+    }
+
+    function showFileFeedback(input) {
+      if (input.files && input.files[0]) {
+        const feedback = document.getElementById('file-feedback');
+        feedback.classList.remove('hidden');
+        feedback.classList.add('flex');
+        feedback.innerHTML = `<span class="material-symbols-outlined text-xs">check_circle</span> ${input.files[0].name} attached`;
+      }
+    }
+
+    function completeRegistration() {
+      const modal = document.getElementById('success-modal');
+      modal.classList.remove('hidden');
+    }
+
+    function closeSuccessModal() {
+      const modal = document.getElementById('success-modal');
+      modal.classList.add('hidden');
+    }
+
+    function copyVanityLink() {
+      const input = document.getElementById('final-vanity-url');
+      navigator.clipboard.writeText(input.value).then(() => {
+        const btnTxt = document.getElementById('copy-btn-txt');
+        btnTxt.innerText = "Copied!";
+        setTimeout(() => {
+          btnTxt.innerText = "Copy Link";
+        }, 2000);
+      }).catch(() => {
+        input.select();
+        document.execCommand('copy');
+      });
+    }
+  </script>
+</div></div></div></main><footer class="relative z-10 w-full bg-surface-container-low/80 backdrop-blur-md mt-margin py-space-xl border-t border-white/40"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-label-md text-label-md"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary uppercase">CampusConnect</span><span class="text-outline">|</span><span>Civic Accountability &amp; Grievance Governance</span></div><div>© 2025 Indian Institute of Technology Delhi. Powered by CampusConnect.</div></div></footer></body></html>

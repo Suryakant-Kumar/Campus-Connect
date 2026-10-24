@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>CampusConnect</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-fixed": "#dde1ff", "secondary-fixed-dim": "#aec6ff", "outline": "#747687", "surface-container-lowest": "#ffffff", "surface-tint": "#054cec", "surface-variant": "#dae2fd", "on-secondary-fixed": "#001a42", "on-primary-fixed-variant": "#0038b6", "on-surface": "#131b2e", "on-primary": "#ffffff", "on-tertiary-fixed": "#002113", "tertiary-fixed": "#6ffbbe", "on-secondary": "#ffffff", "secondary-fixed": "#d8e2ff", "tertiary-container": "#00704c", "on-tertiary-fixed-variant": "#005236", "on-primary-fixed": "#001452", "tertiary-fixed-dim": "#4edea3", "secondary": "#2a5caf", "outline-variant": "#c3c5d8", "background": "#faf8ff", "primary-fixed-dim": "#b7c4ff", "on-background": "#131b2e", "secondary-container": "#79a5fd", "surface-dim": "#d2d9f4", "on-tertiary-container": "#6af7b9", "surface-container-low": "#f2f3ff", "on-surface-variant": "#434656", "on-error": "#ffffff", "surface-container": "#eaedff", "on-secondary-container": "#00397f", "error-container": "#ffdad6", "error": "#ba1a1a", "primary-container": "#1150ef", "surface": "#faf8ff", "on-tertiary": "#ffffff", "surface-bright": "#faf8ff", "primary": "#003bbe", "tertiary": "#005539", "inverse-on-surface": "#eef0ff", "on-error-container": "#93000a", "inverse-primary": "#b7c4ff", "on-primary-container": "#d6dcff", "on-secondary-fixed-variant": "#004395", "inverse-surface": "#283044", "surface-container-highest": "#dae2fd", "surface-container-high": "#e2e7ff" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "margin-mobile": "1.25rem", "space-md": "1rem", "space-sm": "0.5rem", "gutter-mobile": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "margin": "3rem", "gutter": "1.5rem" }, "fontFamily": { "body-md": ["Archivo Narrow"], "label-lg": ["Archivo Narrow"], "headline-md": ["Playfair Display"], "display-hero": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "label-md": ["Archivo Narrow"], "headline-sm": ["Playfair Display"], "label-sm": ["Archivo Narrow"], "headline-lg": ["Playfair Display"], "body-lg": ["Archivo Narrow"], "body-sm": ["Archivo Narrow"], "display-hero-mobile": ["Playfair Display"] }, "fontSize": { "body-md": ["15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.05em", "fontWeight": "600" }], "headline-md": ["26px", { "lineHeight": "34px", "letterSpacing": "0.02em", "fontWeight": "600" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0.02em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "0.03em", "fontWeight": "700" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "0.02em", "fontWeight": "700" }] } } } };</script></head><body class="min-h-full font-body-md text-body-md text-on-surface bg-gradient-to-b from-primary via-secondary-container to-surface relative selection:bg-primary-fixed selection:text-on-primary-fixed"><div class="pointer-events-none fixed inset-0 z-0 overflow-hidden"><div class="absolute -top-32 left-1/4 w-[600px] h-[600px] rounded-full bg-surface-container-lowest/20 blur-[100px]"></div><div class="absolute top-48 right-10 w-[450px] h-[450px] rounded-full bg-secondary-fixed/25 blur-[90px]"></div><div class="absolute inset-0 flex justify-between pointer-events-none opacity-20"><div class="w-px h-full bg-surface-container-lowest/60 ml-[5%]"></div><div class="w-px h-full bg-surface-container-lowest/60 ml-[30%]"></div><div class="w-px h-full bg-surface-container-lowest/60 ml-[30%]"></div><div class="w-px h-full bg-surface-container-lowest/60 mr-[5%]"></div></div></div><header class="fixed top-0 left-0 right-0 z-50 px-gutter-mobile md:px-margin"><div class="h-20 max-w-6xl mx-auto flex items-center justify-between"><div class="w-full backdrop-blur-xl bg-surface-container-lowest/25 shadow-lg shadow-on-primary-fixed/10 rounded-full px-space-lg py-2.5 flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-surface-container-lowest/90 flex items-center justify-center text-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">account_balance</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-primary leading-tight tracking-tight">CampusConnect</span><span class="font-label-sm text-label-sm text-primary-fixed tracking-wider uppercase">iitd.campusconnect.edu</span></div></div><nav class="hidden lg:flex items-center gap-space-xs p-1 rounded-full bg-surface-container-lowest/15 backdrop-blur-md" data-active-classes="bg-surface-container-lowest text-on-surface font-label-lg shadow-sm"><a aria-current="page" class="px-space-md py-1.5 rounded-full transition-all bg-surface-container-lowest text-on-surface font-label-lg shadow-sm" data-path="live-issues" href="#">Live Issues</a><a class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-primary transition-all hover:bg-surface-container-lowest/20 hover:text-on-primary" data-path="resolved-history" href="#">Resolved History</a><a class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-primary transition-all hover:bg-surface-container-lowest/20 hover:text-on-primary" data-path="admin-suite" href="#">Admin Suite</a><a class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-primary transition-all hover:bg-surface-container-lowest/20 hover:text-on-primary" data-path="worker-tasks" href="#">Worker Tasks</a><a class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-primary transition-all hover:bg-surface-container-lowest/20 hover:text-on-primary" data-path="founder-console" href="#">Founder Console</a></nav><div class="flex items-center gap-space-sm"><a class="hidden sm:inline-flex items-center gap-1.5 px-space-md py-2 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md shadow-md transition-all hover:bg-primary-fixed hover:text-on-primary-fixed" data-path="raise-issue" href="#"><span class="material-symbols-outlined text-[16px]">add</span>Raise Issue</a><button class="relative w-9 h-9 rounded-full bg-surface-container-lowest/20 text-on-primary hover:bg-surface-container-lowest/30 hover:text-on-primary flex items-center justify-center transition-all"><span class="material-symbols-outlined text-[18px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="relative z-10 w-full pt-20 px-gutter-mobile md:px-margin min-h-screen"><div class="max-w-6xl mx-auto my-space-lg bg-surface-container-lowest/95 backdrop-blur-xl rounded-xl shadow-2xl p-space-lg md:p-space-xl transition-all"><div class="flex flex-col w-full">
+<!-- Sub-header Breadcrumb & Quick Actions Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-lg">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-secondary">
+<a class="flex items-center gap-1 text-primary hover:text-primary-container transition-colors" data-path="live-issues" href="#">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+<span>Back to Live Issues</span>
+</a>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface-variant font-medium">Ticket #IITD-4092</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-label-sm font-label-sm tracking-wider uppercase">High Priority</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="inline-flex items-center gap-1.5 px-space-md py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-primary hover:bg-surface-container-highest transition-all text-label-md font-label-md shadow-sm">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span>Share Link</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-space-md py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-error hover:bg-error-container/40 transition-all text-label-md font-label-md shadow-sm">
+<span class="material-symbols-outlined text-[18px]">flag</span>
+<span>Escalate</span>
+</button>
+</div>
+</div>
+<!-- Master Issue Hero Unit -->
+<div class="relative bg-surface-container-low rounded-lg p-space-md md:p-space-xl mb-space-xl overflow-hidden shadow-sm">
+<div class="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-primary-fixed/40 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-md">
+<!-- Title & Pills Row -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm uppercase tracking-wider shadow-sm">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container animate-ping"></span>
+          In Progress • Technician Dispatched
+        </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+          Electrical &amp; Network
+        </span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+          Bharti School of Telecom • Lab 204
+        </span>
+<button class="ml-auto inline-flex items-center gap-1.5 px-4 py-1 rounded-full bg-primary-fixed text-on-primary-fixed hover:bg-primary-container hover:text-on-primary transition-all font-label-md text-label-md shadow-sm" id="upvote-btn" onclick="toggleUpvote()">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">arrow_upward</span>
+<span class="font-semibold" id="upvote-count">82 Students Backed</span>
+</button>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+        Burnt 16A Circuit Breaker &amp; Wi-Fi Access Point Power Flap
+      </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-4xl">
+        At approximately 14:10 IST, the primary distribution board panel (Rack PDU-B) emitted a burning plastic smell followed by a sudden circuit trip. Lab 204 GPU compute nodes 1 through 8 dropped offline instantly. Secondary daisy-chain to ceiling access point <code class="px-2 py-0.5 rounded-md bg-surface-variant text-on-secondary-container font-mono text-body-sm">AP-BST-204-5G</code> was interrupted, disconnecting high-throughput research workloads.
+      </p>
+<!-- Grid of Incident Attachments & Assigned Tech -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md pt-space-xs">
+<!-- Photo Evidence -->
+<div class="lg:col-span-7 flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Uploaded Incident Evidence (2 Frames)</span>
+<span class="font-label-sm text-label-sm text-primary">Pre-Dispatch Inspection</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="group relative rounded-DEFAULT overflow-hidden bg-surface-container-highest h-44 shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Close up photographic shot of a scorched institutional electrical panel with charred black Siemens circuit breaker in a university server lab. Clean dramatic editorial lighting, cool slate blue hues, crisp detail and slight metallic sheen, high depth of field." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWVwxNbmpBbVHKjfKFSiwdn7NxjoP3BQ2432wB6GKeq1OMRmBVsM4HuFOMKatAV22QYXCekfog7GBLKEEcyKlGCugOHUXgBkAcCLDtKLbhNqKJ53DpG0JqCgsIOge7HJH5DBn9BULuzGK3Zmc3fcssEkvbGGDsq5VYn5-IQleqzHKJpurdHHNZyBAT6VXCqfN4gj-PTci5WYOhGS6xnpTljNHZ-6Y49uKYfNl7i9ZTAFQ-RiOZww_S"/>
+<div class="absolute bottom-2 left-2 px-2 py-1 rounded-full bg-on-surface/80 backdrop-blur-md text-on-primary font-label-sm text-label-sm">
+                Rack PDU-B Main Breaker
+              </div>
+</div>
+<div class="group relative rounded-DEFAULT overflow-hidden bg-surface-container-highest h-44 shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Telephoto perspective of an overhead enterprise ceiling Wi-Fi access point in an academic server room, showing dark indicator LEDs with a blurred laboratory background. Architectural lighting, modern deep blue and white corporate aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQbTkWXEeCWvOrfiR4bCA3jHBkgLb3tDYJO27Q6Nf8mmzApv5cG6ETFRIKBXQkutooSzNR8_4LfUw1QFhHP0gkTyJbzLg06s73B2HXpk2vrh9s3oJ3mYOqTK4W0-RKAM_8gWnJX5gqYnYv_odFR6jlkQxsmPT-fC1KfRxoo3UF93YwkzHwcYGNSXo-ekn8bOVdlqXUEmUkINqmgrNfflT5XBu5G5fWaNjNmtvKn7UR5HHFqIrH9qqt"/>
+<div class="absolute bottom-2 left-2 px-2 py-1 rounded-full bg-on-surface/80 backdrop-blur-md text-on-primary font-label-sm text-label-sm">
+                Ceiling AP-04 Inactive
+              </div>
+</div>
+</div>
+</div>
+<!-- Assigned Specialist Card -->
+<div class="lg:col-span-5 flex flex-col justify-between p-space-md rounded-DEFAULT bg-surface-container-lowest shadow-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-12 h-12 rounded-full overflow-hidden bg-surface-variant flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Professional headshot of an experienced Indian male staff electrical engineer in uniform smiling with confidence against a bright campus laboratory background. Natural daylight, warm institutional portrait, pristine resolution." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDkrEJa1aDxd2Op0S-ICAdo9-gsdGuJpFq2HlX7tfS1mXKuUOGKj4Bf3lTNbNBTaONP4cbBZS52U4VeGhv1D-OiyytgRk_5-NwNPG0ikGzhMEBpO8N2p8vn_drRKz673KsVBRf3b4AwlT4XY_XYI1fhDHvSTR3C-71OcV78wfCF-FQ3OMiIOjXyMGGOgjLprhY2Q2loVB2F60vTdaOt6TSNiy3sfXfIoRbh8JAGii_tx1Ny0gCBvdo"/>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-tertiary-container ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface">Sunil K.</span>
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sr. Network &amp; Power Engineer</span>
+</div>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-fixed/50 text-on-primary-fixed font-label-md text-label-md">
+<span class="material-symbols-outlined text-[15px] text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold">5.0</span>
+</div>
+</div>
+<div class="my-space-sm p-3 rounded-DEFAULT bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">two_wheeler</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">Technician En Route</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Substation 3 to Bharti School</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-outline uppercase">ETA</span>
+<p class="font-headline-sm text-headline-sm text-primary leading-none mt-0.5">25 mins</p>
+</div>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary">check_circle</span>
+              Issued Siemens 16A Cartridge
+            </span>
+<button class="text-primary hover:underline font-semibold flex items-center gap-1">
+              Direct Radio Call
+              <span class="material-symbols-outlined text-[14px]">call</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Main 2-Column Split: Collaboration Feed vs Ledger Sidebar -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- LEFT: Modern Civic Discussion Stream (Slack/Discord Form Factor) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Thread Header -->
+<div class="flex flex-wrap items-center justify-between pb-space-sm border-b-0">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">forum</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Live Campus Thread &amp; Resolution Channel</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time coordinated discourse between residents, dispatched staff &amp; lab warden</p>
+</div>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed/30 text-tertiary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span>12 active participants</span>
+</div>
+</div>
+<!-- PINNED ANNOUNCEMENT CARD (Message 3 as Pinned Banner) -->
+<div class="relative overflow-hidden p-space-md rounded-DEFAULT bg-secondary-fixed/30 text-on-secondary-fixed shadow-sm flex items-start gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">push_pin</span>
+</div>
+<div class="flex flex-col gap-0.5 flex-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-secondary-fixed">Lab Warden Announcement</span>
+<span class="px-2 py-0.2 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm uppercase">Pinned</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-secondary-fixed/70">14:18 IST</span>
+</div>
+<p class="font-body-md text-body-md text-on-secondary-fixed font-medium mt-1">
+            "Lab 203 auxiliary power remains active for urgent compute jobs. Sunil has emergency bypass access to Rack 04. Please relocate high-memory batches immediately."
+          </p>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-sm text-label-sm text-on-secondary-fixed/80">Posted by Dr. P. Venkat (Lab Warden &amp; Admin)</span>
+</div>
+</div>
+</div>
+<!-- Live Messages Stream -->
+<div class="flex flex-col gap-space-md">
+<!-- Message 1 (Resident) -->
+<div class="flex items-start gap-space-sm group">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-headline-sm flex-shrink-0">
+            AR
+          </div>
+<div class="flex flex-col flex-1">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Ananya R.</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Resident • M.Tech CSE</span>
+<span class="font-body-sm text-body-sm text-outline ml-auto">14:12 IST</span>
+</div>
+<div class="mt-1 p-space-md rounded-2xl rounded-tl-sm bg-surface-container-low text-on-surface shadow-sm max-w-2xl">
+<p class="font-body-md text-body-md">
+                Power tripped while running GPU batch jobs. Is Lab 204 rack completely offline? We had 4 LLM training runs scheduled to checkpoint at 15:00.
+              </p>
+</div>
+<div class="flex items-center gap-space-sm mt-1 text-label-sm text-outline">
+<button class="hover:text-primary transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">reply</span> Reply
+              </button>
+<button class="hover:text-primary transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">thumb_up</span> 4
+              </button>
+</div>
+</div>
+</div>
+<!-- Message 2 (Worker / Technician) -->
+<div class="flex items-start gap-space-sm group">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-variant flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Avatar portrait of Sunil K, institutional campus electrician wearing navy maintenance gear and a friendly professional demeanor, clean lighting, circular avatar framing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2XvC7Th_XCzQQM4va7khzS08uPSlSwVFMCh3jJdwP1O-68sIhw8IIBkIWuMKFpKZhOl8eu4Ls4L98bP4QezNrLZaxWrtNUQHd_i1sEjBLRQuMoo6cR1t5wNlvMVr0QdyKoLdCBrAAaMbqQkj5JSwE0kKTn1TwtniSa2i6q2cSHSghqhkusqIpUFONV18RBi6efqGpIrNbamY4Z-aV2e1OKZU111R9qkEdbs1oZSNsE6_1Q3Ez-_Iu"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Sunil K.</span>
+<span class="px-2 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm">Staff Engineer • On Route</span>
+<span class="font-body-sm text-body-sm text-outline ml-auto">14:15 IST</span>
+</div>
+<div class="mt-1 p-space-md rounded-2xl rounded-tl-sm bg-primary-fixed/25 text-on-surface shadow-sm max-w-2xl">
+<p class="font-body-md text-body-md">
+                On my way from Substation 3 with replacement 16A Siemens MCB and heat-shrink insulation. ETA 15 mins. Please do not turn on breaker manually under any circumstances—rack busbars must be verified with megger testing first.
+              </p>
+</div>
+<div class="flex items-center gap-space-sm mt-1 text-label-sm text-outline">
+<button class="hover:text-primary transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">reply</span> Reply
+              </button>
+<button class="hover:text-primary transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">thumb_up</span> 18
+              </button>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed/30 text-tertiary font-label-sm text-label-sm">Official Directive</span>
+</div>
+</div>
+</div>
+<!-- Message 4 (Resident) -->
+<div class="flex items-start gap-space-sm group">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary font-headline-sm flex-shrink-0">
+            RK
+          </div>
+<div class="flex flex-col flex-1">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Rohan K.</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">PhD Scholar</span>
+<span class="font-body-sm text-body-sm text-outline ml-auto">14:22 IST</span>
+</div>
+<div class="mt-1 p-space-md rounded-2xl rounded-tl-sm bg-surface-container-low text-on-surface shadow-sm max-w-2xl">
+<p class="font-body-md text-body-md">
+                Thanks Sunil ji! Wi-Fi SSID IITD-5G just dropped as well across south corridor. Does that mean the switch stack also went dead?
+              </p>
+</div>
+<div class="flex items-center gap-space-sm mt-1 text-label-sm text-outline">
+<button class="hover:text-primary transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">reply</span> Reply
+              </button>
+<button class="hover:text-primary transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">thumb_up</span> 2
+              </button>
+</div>
+</div>
+</div>
+<!-- Message 5 (Worker - Sunil K.) -->
+<div class="flex items-start gap-space-sm group">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-variant flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Avatar portrait of Sunil K, campus technician with friendly professional expression, clean lighting, circular avatar framing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuACE8molTRyIN-_dL-GHlSZLvmrElXBWy90-BUWZWeQa8_juUUWFc9o4TYpmBXjLbD6lyC98xG6bqImt5B0s-0AyeleECSHqpJMEEHafCt4vaEtJv9UnVgO0NM1j8AoC2HoYXRJ0x1Gn5wjOj0AECdNWWctf0d8EyuVGKMytyjhlIFCzouG-csInY_zCdcmDdYaSIV2AzdTMmsU3dyIypznyRMTIF1OPT3LsYuqjiYUyX66wJc4OdwO"/>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Sunil K.</span>
+<span class="px-2 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm">Staff Engineer</span>
+<span class="font-body-sm text-body-sm text-outline ml-auto">14:24 IST</span>
+</div>
+<div class="mt-1 p-space-md rounded-2xl rounded-tl-sm bg-primary-fixed/25 text-on-surface shadow-sm max-w-2xl">
+<p class="font-body-md text-body-md">
+                Understood, AP-04 is daisy-chained to that rack. Restoring both together. I've brought a 48V PoE injector backup module in case the PoE port was burned during surge.
+              </p>
+</div>
+<div class="flex items-center gap-space-sm mt-1 text-label-sm text-outline">
+<button class="hover:text-primary transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">reply</span> Reply
+              </button>
+<button class="hover:text-primary transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">thumb_up</span> 9
+              </button>
+</div>
+</div>
+</div>
+<!-- Dynamic Live Message Insertion Target -->
+<div class="flex flex-col gap-space-md" id="dynamic-messages"></div>
+</div>
+<!-- Interactive Input Composer Unit -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container-low shadow-sm flex flex-col gap-space-sm">
+<!-- Quick Action Prompt Chips -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 text-label-sm font-label-sm">
+<span class="text-outline uppercase flex items-center gap-1 flex-shrink-0">
+<span class="material-symbols-outlined text-[14px]">bolt</span> Quick Tag:
+          </span>
+<button class="px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors whitespace-nowrap shadow-sm" onclick="insertPrompt('Is it safe to unplug client workstations?')">
+            Is it safe?
+          </button>
+<button class="px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors whitespace-nowrap shadow-sm" onclick="insertPrompt('When will Wi-Fi return to south corridor?')">
+            When will Wi-Fi return?
+          </button>
+<button class="px-3 py-1 rounded-full bg-error-container text-on-error-container hover:bg-error hover:text-on-error transition-colors whitespace-nowrap shadow-sm" onclick="insertPrompt('@Sunil K. Emergency Escalation: Server temperature rising above 38°C')">
+            Emergency Escalation
+          </button>
+</div>
+<div class="relative flex items-end gap-space-xs">
+<textarea class="w-full rounded-2xl bg-surface-container-lowest text-on-surface font-body-md text-body-md p-3 pr-24 resize-none outline-none focus:ring-2 focus:ring-primary/20 shadow-inner" id="chat-input" placeholder="Send a message or ask Sunil K. a follow-up... (Markdown supported, attach image, @mention staff)" rows="2"></textarea>
+<div class="absolute right-2 bottom-2 flex items-center gap-1">
+<button class="w-8 h-8 rounded-full flex items-center justify-center text-outline hover:text-primary hover:bg-surface-container-high transition-all" title="Attach Image">
+<span class="material-symbols-outlined text-[18px]">attach_file</span>
+</button>
+<button class="w-9 h-9 rounded-full bg-primary text-on-primary hover:bg-primary-container flex items-center justify-center transition-transform active:scale-95 shadow-md" onclick="submitMessage()">
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-outline px-1">
+<span>Campus Code of Conduct applies • Markdown formatted</span>
+<span>Press Enter ↵ to dispatch</span>
+</div>
+</div>
+</div>
+<!-- RIGHT: Institutional Status Ledger & Escalation Sidebar -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Timeline Ledger Card -->
+<div class="p-space-lg rounded-DEFAULT bg-surface-container-low shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Ticket Timeline</h3>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Live Trace</span>
+</div>
+<!-- Linear Stepper -->
+<div class="relative flex flex-col gap-space-md pl-6 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-variant">
+<!-- Step 1: Reported -->
+<div class="relative flex flex-col">
+<div class="absolute -left-[23px] top-0.5 w-4 h-4 rounded-full bg-tertiary ring-4 ring-surface-container-lowest flex items-center justify-center text-on-tertiary">
+<span class="material-symbols-outlined text-[10px]">check</span>
+</div>
+<div class="flex items-baseline justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Reported</span>
+<span class="font-label-sm text-label-sm text-outline">14:10</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Incident submitted via Mobile App by Lab Captain</p>
+</div>
+<!-- Step 2: Verified -->
+<div class="relative flex flex-col">
+<div class="absolute -left-[23px] top-0.5 w-4 h-4 rounded-full bg-tertiary ring-4 ring-surface-container-lowest flex items-center justify-center text-on-tertiary">
+<span class="material-symbols-outlined text-[10px]">check</span>
+</div>
+<div class="flex items-baseline justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Verified by Warden</span>
+<span class="font-label-sm text-label-sm text-outline">14:14</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dr. P. Venkat endorsed severity and dispatched high-amp task</p>
+</div>
+<!-- Step 3: Dispatched (Current) -->
+<div class="relative flex flex-col">
+<div class="absolute -left-[23px] top-0.5 w-4 h-4 rounded-full bg-primary ring-4 ring-primary-fixed flex items-center justify-center text-on-primary animate-pulse">
+<span class="material-symbols-outlined text-[10px]">navigation</span>
+</div>
+<div class="flex items-baseline justify-between">
+<span class="font-headline-sm text-headline-sm text-primary">Worker Dispatched</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">14:16 (Active)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">Sunil K. moving with replacement Siemens breaker</p>
+</div>
+<!-- Step 4: On-Site -->
+<div class="relative flex flex-col opacity-60">
+<div class="absolute -left-[23px] top-0.5 w-4 h-4 rounded-full bg-surface-variant ring-4 ring-surface-container-lowest"></div>
+<div class="flex items-baseline justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">On-Site Triage</span>
+<span class="font-label-sm text-label-sm text-outline">~14:35</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Megger wire resistance validation &amp; socket replacement</p>
+</div>
+<!-- Step 5: Est. Resolution -->
+<div class="relative flex flex-col opacity-60">
+<div class="absolute -left-[23px] top-0.5 w-4 h-4 rounded-full bg-surface-variant ring-4 ring-surface-container-lowest"></div>
+<div class="flex items-baseline justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Est. Resolution</span>
+<span class="font-label-sm text-label-sm text-outline">~15:00</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Power energization and Wi-Fi SSID broadcast verified</p>
+</div>
+</div>
+</div>
+<!-- Official Governance & Escalation Rules -->
+<div class="p-space-lg rounded-DEFAULT bg-surface-container-low shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[20px]">policy</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Governance &amp; SLA</h3>
+</div>
+<div class="p-3 rounded-DEFAULT bg-surface-container-lowest flex flex-col gap-1 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase">Current SLA Tier</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">L1 Maintenance</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-1">
+            Automated escalation will notify the <strong class="text-primary">Executive Estate Officer (Civil &amp; Electrical)</strong> if unresolved in:
+          </p>
+<div class="flex items-center gap-2 mt-2">
+<span class="material-symbols-outlined text-error text-[18px]">timer</span>
+<span class="font-headline-sm text-headline-sm text-error">01h : 14m : 32s</span>
+</div>
+</div>
+<!-- Incident Classification Parameters -->
+<div class="grid grid-cols-2 gap-2 text-label-sm font-label-sm pt-1">
+<div class="p-2.5 rounded-DEFAULT bg-surface-container flex flex-col">
+<span class="text-outline uppercase">Audited By</span>
+<span class="text-on-surface font-semibold mt-0.5">IITD Safety Cell</span>
+</div>
+<div class="p-2.5 rounded-DEFAULT bg-surface-container flex flex-col">
+<span class="text-outline uppercase">Risk Level</span>
+<span class="text-error font-semibold mt-0.5">Tier 2 Thermal</span>
+</div>
+</div>
+</div>
+<!-- Subscribed Community Members (82 Notified) -->
+<div class="p-space-lg rounded-DEFAULT bg-surface-container-low shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">notifications_active</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Subscribers</h3>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">82 Backers</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          All subscribed residents will receive instant SMS and push alert the moment Sunil K. signs off resolution.
+        </p>
+<!-- Avatar Pile -->
+<div class="flex items-center -space-x-2 pt-2 overflow-hidden">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center ring-2 ring-surface-container-lowest font-bold">JD</div>
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm flex items-center justify-center ring-2 ring-surface-container-lowest font-bold">SK</div>
+<div class="w-8 h-8 rounded-full bg-tertiary text-on-tertiary font-label-sm text-label-sm flex items-center justify-center ring-2 ring-surface-container-lowest font-bold">RP</div>
+<div class="w-8 h-8 rounded-full bg-on-secondary-fixed text-on-primary font-label-sm text-label-sm flex items-center justify-center ring-2 ring-surface-container-lowest font-bold">AV</div>
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm flex items-center justify-center ring-2 ring-surface-container-lowest font-bold">+78</div>
+</div>
+<button class="w-full mt-2 py-2 rounded-full bg-surface-container-highest text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed transition-all font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm" onclick="toggleSubscription(this)">
+<span class="material-symbols-outlined text-[16px]">notifications</span>
+<span id="sub-btn-text">Subscribed (Click to Mute)</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  let upvoted = false;
+  let currentVotes = 82;
+
+  function toggleUpvote() {
+    const btn = document.getElementById('upvote-btn');
+    const label = document.getElementById('upvote-count');
+    if (!upvoted) {
+      currentVotes += 1;
+      label.innerText = currentVotes + ' Students Backed';
+      btn.classList.add('bg-primary', 'text-on-primary');
+      btn.classList.remove('bg-primary-fixed', 'text-on-primary-fixed');
+      upvoted = true;
+    } else {
+      currentVotes -= 1;
+      label.innerText = currentVotes + ' Students Backed';
+      btn.classList.remove('bg-primary', 'text-on-primary');
+      btn.classList.add('bg-primary-fixed', 'text-on-primary-fixed');
+      upvoted = false;
+    }
+  }
+
+  function insertPrompt(text) {
+    const input = document.getElementById('chat-input');
+    input.value = text;
+    input.focus();
+  }
+
+  function submitMessage() {
+    const input = document.getElementById('chat-input');
+    const text = input.value.trim();
+    if (!text) return;
+
+    const container = document.getElementById('dynamic-messages');
+    const newMsg = document.createElement('div');
+    newMsg.className = "flex items-start gap-space-sm group";
+    newMsg.innerHTML = `
+      <div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm flex-shrink-0 shadow-sm">
+        ME
+      </div>
+      <div class="flex flex-col flex-1">
+        <div class="flex items-baseline gap-space-xs">
+          <span class="font-headline-sm text-headline-sm text-on-surface">You (You)</span>
+          <span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Lab 204 User</span>
+          <span class="font-body-sm text-body-sm text-outline ml-auto">Just now</span>
+        </div>
+        <div class="mt-1 p-space-md rounded-2xl rounded-tl-sm bg-surface-container-high text-on-surface shadow-sm max-w-2xl">
+          <p class="font-body-md text-body-md">${escapeHTML(text)}</p>
+        </div>
+      </div>
+    `;
+    container.appendChild(newMsg);
+    input.value = '';
+    newMsg.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function escapeHTML(str) {
+    return str.replace(/[&<>'"]/g, 
+      tag => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        "'": '&#39;',
+        '"': '&quot;'
+      }[tag] || tag)
+    );
+  }
+
+  let subscribed = true;
+  function toggleSubscription(btn) {
+    const text = document.getElementById('sub-btn-text');
+    if (subscribed) {
+      text.innerText = "Get Alert Updates";
+      btn.classList.remove('bg-primary-fixed', 'text-on-primary-fixed');
+      btn.classList.add('bg-surface-container-highest', 'text-on-surface');
+      subscribed = false;
+    } else {
+      text.innerText = "Subscribed (Click to Mute)";
+      btn.classList.add('bg-primary-fixed', 'text-on-primary-fixed');
+      subscribed = true;
+    }
+  }
+
+  // Handle Enter key for fast messaging
+  document.getElementById('chat-input')?.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      submitMessage();
+    }
+  });
+</script></div></main><footer class="relative z-10 w-full mt-space-xl py-space-lg px-gutter-mobile md:px-margin"><div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left"><div class="flex items-center gap-space-sm"><div class="w-7 h-7 rounded-full bg-surface-container-lowest/40 flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[16px]">verified</span></div><div><p class="font-headline-sm text-headline-sm text-on-surface">CampusConnect Civic Governance</p><p class="font-body-sm text-body-sm text-on-surface-variant">Transparent Dormitory &amp; Campus Incident Accountability</p></div></div><p class="font-label-sm text-label-sm text-on-surface-variant">© 2025 CampusConnect Framework. Built for Institutional Living.</p></div></footer></body></html>

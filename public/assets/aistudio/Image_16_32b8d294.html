@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>CampusConnect</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-fixed": "#dde1ff", "secondary-fixed-dim": "#aec6ff", "outline": "#747687", "surface-container-lowest": "#ffffff", "surface-tint": "#054cec", "surface-variant": "#dae2fd", "on-secondary-fixed": "#001a42", "on-primary-fixed-variant": "#0038b6", "on-surface": "#131b2e", "on-primary": "#ffffff", "on-tertiary-fixed": "#002113", "tertiary-fixed": "#6ffbbe", "on-secondary": "#ffffff", "secondary-fixed": "#d8e2ff", "tertiary-container": "#00704c", "on-tertiary-fixed-variant": "#005236", "on-primary-fixed": "#001452", "tertiary-fixed-dim": "#4edea3", "secondary": "#2a5caf", "outline-variant": "#c3c5d8", "background": "#faf8ff", "primary-fixed-dim": "#b7c4ff", "on-background": "#131b2e", "secondary-container": "#79a5fd", "surface-dim": "#d2d9f4", "on-tertiary-container": "#6af7b9", "surface-container-low": "#f2f3ff", "on-surface-variant": "#434656", "on-error": "#ffffff", "surface-container": "#eaedff", "on-secondary-container": "#00397f", "error-container": "#ffdad6", "error": "#ba1a1a", "primary-container": "#1150ef", "surface": "#faf8ff", "on-tertiary": "#ffffff", "surface-bright": "#faf8ff", "primary": "#003bbe", "tertiary": "#005539", "inverse-on-surface": "#eef0ff", "on-error-container": "#93000a", "inverse-primary": "#b7c4ff", "on-primary-container": "#d6dcff", "on-secondary-fixed-variant": "#004395", "inverse-surface": "#283044", "surface-container-highest": "#dae2fd", "surface-container-high": "#e2e7ff" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "margin-mobile": "1.25rem", "space-md": "1rem", "space-sm": "0.5rem", "gutter-mobile": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "margin": "3rem", "gutter": "1.5rem" }, "fontFamily": { "body-md": ["Archivo Narrow"], "label-lg": ["Archivo Narrow"], "headline-md": ["Playfair Display"], "display-hero": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "label-md": ["Archivo Narrow"], "headline-sm": ["Playfair Display"], "label-sm": ["Archivo Narrow"], "headline-lg": ["Playfair Display"], "body-lg": ["Archivo Narrow"], "body-sm": ["Archivo Narrow"], "display-hero-mobile": ["Playfair Display"] }, "fontSize": { "body-md": ["15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.05em", "fontWeight": "600" }], "headline-md": ["26px", { "lineHeight": "34px", "letterSpacing": "0.02em", "fontWeight": "600" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0.02em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "0.03em", "fontWeight": "700" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "0.02em", "fontWeight": "700" }] } } } };</script></head><body class="min-h-full font-body-md text-body-md text-on-surface bg-gradient-to-b from-primary via-secondary-container to-surface relative selection:bg-primary-fixed selection:text-on-primary-fixed"><div class="pointer-events-none fixed inset-0 z-0 overflow-hidden"><div class="absolute -top-32 left-1/4 w-[600px] h-[600px] rounded-full bg-surface-container-lowest/20 blur-[100px]"></div><div class="absolute top-48 right-10 w-[450px] h-[450px] rounded-full bg-secondary-fixed/25 blur-[90px]"></div><div class="absolute inset-0 flex justify-between pointer-events-none opacity-20"><div class="w-px h-full bg-surface-container-lowest/60 ml-[5%]"></div><div class="w-px h-full bg-surface-container-lowest/60 ml-[30%]"></div><div class="w-px h-full bg-surface-container-lowest/60 ml-[30%]"></div><div class="w-px h-full bg-surface-container-lowest/60 mr-[5%]"></div></div></div><header class="fixed top-0 left-0 right-0 z-50 px-gutter-mobile md:px-margin"><div class="h-20 max-w-6xl mx-auto flex items-center justify-between"><div class="w-full backdrop-blur-xl bg-surface-container-lowest/25 shadow-lg shadow-on-primary-fixed/10 rounded-full px-space-lg py-2.5 flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-surface-container-lowest/90 flex items-center justify-center text-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">account_balance</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-primary leading-tight tracking-tight">CampusConnect</span><span class="font-label-sm text-label-sm text-primary-fixed tracking-wider uppercase">iitd.campusconnect.edu</span></div></div><nav class="hidden lg:flex items-center gap-space-xs p-1 rounded-full bg-surface-container-lowest/15 backdrop-blur-md" data-active-classes="bg-surface-container-lowest text-on-surface font-label-lg shadow-sm"><a class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-primary transition-all hover:bg-surface-container-lowest/20 hover:text-on-primary" data-path="live-issues" href="#">Live Issues</a><a class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-primary transition-all hover:bg-surface-container-lowest/20 hover:text-on-primary" data-path="resolved-history" href="#">Resolved History</a><a class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-primary transition-all hover:bg-surface-container-lowest/20 hover:text-on-primary" data-path="admin-suite" href="#">Admin Suite</a><a class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-primary transition-all hover:bg-surface-container-lowest/20 hover:text-on-primary" data-path="worker-tasks" href="#">Worker Tasks</a><a aria-current="page" class="px-space-md py-1.5 rounded-full transition-all bg-surface-container-lowest text-on-surface font-label-lg shadow-sm" data-path="founder-console" href="#">Founder Console</a></nav><div class="flex items-center gap-space-sm"><a class="hidden sm:inline-flex items-center gap-1.5 px-space-md py-2 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md shadow-md transition-all hover:bg-primary-fixed hover:text-on-primary-fixed" data-path="raise-issue" href="#"><span class="material-symbols-outlined text-[16px]">add</span>Raise Issue</a><button class="relative w-9 h-9 rounded-full bg-surface-container-lowest/20 text-on-primary hover:bg-surface-container-lowest/30 hover:text-on-primary flex items-center justify-center transition-all"><span class="material-symbols-outlined text-[18px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="relative z-10 w-full pt-20 px-gutter-mobile md:px-margin min-h-screen"><div class="max-w-6xl mx-auto my-space-lg bg-surface-container-lowest/95 backdrop-blur-xl rounded-xl shadow-2xl p-space-lg md:p-space-xl transition-all"><div class="flex flex-col w-full">
+<!-- Top Ambient Telemetry Pill Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-lg">
+<div class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-low text-secondary shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Global Sharding Cluster: Asia-South (Mumbai AWS-01)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Console Session:</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold px-space-xs py-0.5 rounded-full bg-primary-fixed">SuperAdmin: root@campusconnect.global</span>
+</div>
+</div>
+<!-- Header Section with High-End Scale and Serene Typography -->
+<div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-surface-container-low via-surface-container-lowest to-surface-container-low p-space-lg md:p-space-xl mb-space-lg shadow-sm">
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="max-w-2xl">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm tracking-wide uppercase mb-space-xs">
+<span class="material-symbols-outlined text-[14px]">shield_person</span>
+          Multi-Tenant Governance Engine
+        </div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-1">
+          CampusConnect Founder &amp; Super-Admin Console
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-xl">
+          Global multi-tenant network telemetry across 142 institutional partitions. Real-time observability, domain provisioning, and autonomous governance oversight.
+        </p>
+</div>
+<!-- Quick Action Controls -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="inline-flex items-center gap-2 px-space-lg py-2.5 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-md transition-all hover:bg-surface-tint active:scale-95" id="btn-provision">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+          Provision New Subdomain
+        </button>
+<button class="inline-flex items-center gap-1.5 px-space-md py-2.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md transition-all hover:bg-secondary-fixed">
+<span class="material-symbols-outlined text-[17px] text-primary">currency_rupee</span>
+          Worker Payouts
+        </button>
+<button class="inline-flex items-center gap-1.5 px-space-md py-2.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md transition-all hover:bg-secondary-fixed">
+<span class="material-symbols-outlined text-[17px] text-primary">download</span>
+          Export Compliance CSV
+        </button>
+</div>
+</div>
+</div>
+<!-- Global Metrics Bar (Bento Strip) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-xl">
+<!-- Metric 1 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Total Active Campuses</span>
+<span class="w-7 h-7 rounded-full bg-primary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">corporate_fare</span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-hero text-display-hero-mobile md:text-[44px] leading-none text-on-surface font-bold">142</span>
+<span class="inline-flex items-center text-tertiary-container font-label-md text-label-md font-semibold bg-tertiary-fixed/30 px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>+8 this week
+        </span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-3 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 78%"></div>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Total Issues Resolved</span>
+<span class="w-7 h-7 rounded-full bg-tertiary-fixed-dim/40 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">task_alt</span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-hero text-display-hero-mobile md:text-[44px] leading-none text-on-surface font-bold">84,920</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">all-time records</span>
+</div>
+<!-- Inline Sparkline SVG Chart -->
+<div class="mt-2 h-4 w-full">
+<svg class="w-full h-full text-tertiary stroke-current fill-none stroke-[2]" viewbox="0 0 120 20">
+<path d="M0,18 L15,14 L30,16 L45,11 L60,13 L75,7 L90,9 L105,4 L120,2"></path>
+</svg>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Average Global MTTR</span>
+<span class="w-7 h-7 rounded-full bg-secondary-fixed text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">timer</span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-hero text-display-hero-mobile md:text-[44px] leading-none text-on-surface font-bold">1h 48m</span>
+<span class="inline-flex items-center text-tertiary-container font-label-md text-label-md font-semibold bg-tertiary-fixed/30 px-2 py-0.5 rounded-full">
+          -14m vs Q3
+        </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Dormitory water &amp; electrical prioritised</p>
+</div>
+<!-- Metric 4 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">System Health &amp; Uptime</span>
+<span class="w-7 h-7 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">hub</span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-hero text-display-hero-mobile md:text-[44px] leading-none text-tertiary font-bold">99.98%</span>
+</div>
+<div class="flex items-center gap-1.5 mt-2">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">All 142 Subdomains Operational</span>
+</div>
+</div>
+</div>
+<!-- Search & Institutional Filter Controls -->
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md mb-space-lg">
+<!-- Category Tabs -->
+<div class="flex flex-wrap items-center gap-1.5 p-1 rounded-full bg-surface-container-high/80">
+<button class="filter-tab active px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container-lowest text-primary shadow-sm font-semibold" data-category="all">
+        All (142)
+      </button>
+<button class="filter-tab px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant transition-all hover:text-on-surface" data-category="University">
+        Universities (64)
+      </button>
+<button class="filter-tab px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant transition-all hover:text-on-surface" data-category="Hostel">
+        Hostels &amp; Halls (42)
+      </button>
+<button class="filter-tab px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant transition-all hover:text-on-surface" data-category="Residential Society">
+        Residential Societies (22)
+      </button>
+<button class="filter-tab px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant transition-all hover:text-on-surface" data-category="Tech Park">
+        Tech Parks &amp; Schools (14)
+      </button>
+</div>
+<!-- Search Input -->
+<div class="relative min-w-[320px]">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span>
+<input class="w-full pl-11 pr-space-md py-2.5 rounded-full bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-outline focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary outline-none transition-all" id="campus-search" placeholder="Filter campuses by name, domain, city, or plan..." type="text"/>
+</div>
+</div>
+<!-- Master Multi-Tenant Directory Table -->
+<div class="overflow-hidden rounded-2xl bg-surface-container-lowest shadow-sm mb-space-xl">
+<div class="overflow-x-auto">
+<table class="w-full text-left" id="tenant-table">
+<thead class="bg-surface-container-low/80 text-on-surface-variant">
+<tr>
+<th class="py-space-md px-space-lg font-label-sm text-label-sm uppercase tracking-wider">Campus Partition</th>
+<th class="py-space-md px-space-md font-label-sm text-label-sm uppercase tracking-wider">Type &amp; Enrolled</th>
+<th class="py-space-md px-space-md font-label-sm text-label-sm uppercase tracking-wider text-center">Active Issues</th>
+<th class="py-space-md px-space-md font-label-sm text-label-sm uppercase tracking-wider text-center">30D Solved</th>
+<th class="py-space-md px-space-md font-label-sm text-label-sm uppercase tracking-wider">SLA Health</th>
+<th class="py-space-md px-space-md font-label-sm text-label-sm uppercase tracking-wider">Partition Status</th>
+<th class="py-space-md px-space-lg font-label-sm text-label-sm uppercase tracking-wider text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface">
+<!-- Row 1: IIT Delhi -->
+<tr class="tenant-row hover:bg-surface-container-low/40 transition-colors" data-type="University">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed text-primary flex items-center justify-center font-bold text-headline-sm shadow-sm">
+                  IT
+                </div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold flex items-center gap-1.5">
+                    Indian Institute of Technology Delhi (IITD)
+                    <span class="w-2 h-2 rounded-full bg-tertiary" title="DNS verified"></span>
+</div>
+<a class="inline-flex items-center gap-1 text-primary hover:underline font-label-md text-label-md" href="https://iitd.campusconnect.com" target="_blank">
+                    iitd.campusconnect.com
+                    <span class="material-symbols-outlined text-[13px]">open_in_new</span>
+</a>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant font-medium">University</span>
+<div class="font-body-sm text-body-sm text-on-surface font-semibold mt-1">12,400 Residents</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-block px-3 py-1 rounded-full font-label-md text-label-md bg-secondary-fixed text-on-secondary-fixed font-bold">24 Active</span>
+<div class="font-label-sm text-label-sm text-error font-medium mt-1">3 Urgent</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">342</span>
+<div class="font-label-sm text-label-sm text-tertiary">98.2% satisfied</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-bold text-tertiary">94.8%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">on-time</span>
+</div>
+<div class="w-24 bg-surface-container-high h-1.5 rounded-full mt-1.5 overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 94.8%"></div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[12px]">verified</span> Active
+              </span>
+<div class="font-label-sm text-label-sm text-primary font-medium mt-1">Enterprise Tier</div>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-primary" title="Manage Tenant">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-secondary" title="View Audit Logs">
+<span class="material-symbols-outlined text-[20px]">history_edu</span>
+</button>
+<button class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-all" title="Impersonate Dean / Hall Admin">
+                  Impersonate
+                </button>
+</div>
+</td>
+</tr>
+<!-- Row 2: BITS Pilani -->
+<tr class="tenant-row hover:bg-surface-container-low/40 transition-colors" data-type="University">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed text-secondary flex items-center justify-center font-bold text-headline-sm shadow-sm">
+                  BP
+                </div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold flex items-center gap-1.5">
+                    BITS Pilani — Pilani Campus
+                    <span class="w-2 h-2 rounded-full bg-tertiary" title="DNS verified"></span>
+</div>
+<a class="inline-flex items-center gap-1 text-primary hover:underline font-label-md text-label-md" href="https://bits-pilani.campusconnect.com" target="_blank">
+                    bits-pilani.campusconnect.com
+                    <span class="material-symbols-outlined text-[13px]">open_in_new</span>
+</a>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant font-medium">University</span>
+<div class="font-body-sm text-body-sm text-on-surface font-semibold mt-1">8,200 Residents</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-block px-3 py-1 rounded-full font-label-md text-label-md bg-secondary-fixed text-on-secondary-fixed font-bold">18 Active</span>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium mt-1">0 Critical</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">280</span>
+<div class="font-label-sm text-label-sm text-tertiary">96.8% satisfied</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-bold text-tertiary">96.2%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">on-time</span>
+</div>
+<div class="w-24 bg-surface-container-high h-1.5 rounded-full mt-1.5 overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 96.2%"></div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[12px]">verified</span> Active
+              </span>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium mt-1">Pro Campus</div>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-primary" title="Manage Tenant">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-secondary" title="View Audit Logs">
+<span class="material-symbols-outlined text-[20px]">history_edu</span>
+</button>
+<button class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-all" title="Impersonate Dean / Hall Admin">
+                  Impersonate
+                </button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Silver Oaks Luxury Residential Society -->
+<tr class="tenant-row hover:bg-surface-container-low/40 transition-colors" data-type="Residential Society">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed-dim/40 text-tertiary flex items-center justify-center font-bold text-headline-sm shadow-sm">
+                  SO
+                </div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold flex items-center gap-1.5">
+                    Silver Oaks Luxury Residential Society
+                    <span class="w-2 h-2 rounded-full bg-tertiary" title="DNS verified"></span>
+</div>
+<a class="inline-flex items-center gap-1 text-primary hover:underline font-label-md text-label-md" href="https://silver-oaks.campusconnect.com" target="_blank">
+                    silver-oaks.campusconnect.com
+                    <span class="material-symbols-outlined text-[13px]">open_in_new</span>
+</a>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant font-medium">Residential</span>
+<div class="font-body-sm text-body-sm text-on-surface font-semibold mt-1">1,450 Residents</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-block px-3 py-1 rounded-full font-label-md text-label-md bg-secondary-fixed text-on-secondary-fixed font-bold">6 Active</span>
+<div class="font-label-sm text-label-sm text-tertiary font-medium mt-1">Normal Velocity</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">94</span>
+<div class="font-label-sm text-label-sm text-tertiary">99.1% satisfied</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-bold text-tertiary">98.0%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">on-time</span>
+</div>
+<div class="w-24 bg-surface-container-high h-1.5 rounded-full mt-1.5 overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 98.0%"></div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[12px]">verified</span> Active
+              </span>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium mt-1">Standard HOA</div>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-primary" title="Manage Tenant">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-secondary" title="View Audit Logs">
+<span class="material-symbols-outlined text-[20px]">history_edu</span>
+</button>
+<button class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-all" title="Impersonate Society Secretary">
+                  Impersonate
+                </button>
+</div>
+</td>
+</tr>
+<!-- Row 4: MAHE Manipal -->
+<tr class="tenant-row hover:bg-surface-container-low/40 transition-colors" data-type="University">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center font-bold text-headline-sm shadow-sm">
+                  MA
+                </div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold flex items-center gap-1.5">
+                    Manipal Academy of Higher Education (MAHE)
+                    <span class="w-2 h-2 rounded-full bg-tertiary" title="DNS verified"></span>
+</div>
+<a class="inline-flex items-center gap-1 text-primary hover:underline font-label-md text-label-md" href="https://manipal.campusconnect.com" target="_blank">
+                    manipal.campusconnect.com
+                    <span class="material-symbols-outlined text-[13px]">open_in_new</span>
+</a>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant font-medium">University</span>
+<div class="font-body-sm text-body-sm text-on-surface font-semibold mt-1">18,500 Residents</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-block px-3 py-1 rounded-full font-label-md text-label-md bg-secondary-fixed text-on-secondary-fixed font-bold">31 Active</span>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium mt-1">5 Escalated</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">410</span>
+<div class="font-label-sm text-label-sm text-tertiary">94.1% satisfied</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-bold text-secondary">91.5%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">on-time</span>
+</div>
+<div class="w-24 bg-surface-container-high h-1.5 rounded-full mt-1.5 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 91.5%"></div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[12px]">verified</span> Active
+              </span>
+<div class="font-label-sm text-label-sm text-primary font-medium mt-1">Mega Campus</div>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-primary" title="Manage Tenant">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-secondary" title="View Audit Logs">
+<span class="material-symbols-outlined text-[20px]">history_edu</span>
+</button>
+<button class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-all" title="Impersonate Chief Warden">
+                  Impersonate
+                </button>
+</div>
+</td>
+</tr>
+<!-- Row 5: NLSIU Bangalore -->
+<tr class="tenant-row hover:bg-surface-container-low/40 transition-colors" data-type="University">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-outline-variant text-on-surface flex items-center justify-center font-bold text-headline-sm shadow-sm">
+                  NL
+                </div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold flex items-center gap-1.5">
+                    National Law School of India University
+                    <span class="w-2 h-2 rounded-full bg-secondary animate-pulse" title="DNS Propagating"></span>
+</div>
+<a class="inline-flex items-center gap-1 text-primary hover:underline font-label-md text-label-md" href="https://nls-bangalore.campusconnect.com" target="_blank">
+                    nls-bangalore.campusconnect.com
+                    <span class="material-symbols-outlined text-[13px]">open_in_new</span>
+</a>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant font-medium">University</span>
+<div class="font-body-sm text-body-sm text-on-surface font-semibold mt-1">1,800 Residents</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-block px-3 py-1 rounded-full font-label-md text-label-md bg-secondary-fixed text-on-secondary-fixed font-bold">2 Active</span>
+<div class="font-label-sm text-label-sm text-tertiary font-medium mt-1">Staging Phase</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">52</span>
+<div class="font-label-sm text-label-sm text-tertiary">100% satisfied</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-bold text-tertiary">99.1%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">on-time</span>
+</div>
+<div class="w-24 bg-surface-container-high h-1.5 rounded-full mt-1.5 overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 99.1%"></div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[12px]">dns</span> Provisioning
+              </span>
+<div class="font-label-sm text-label-sm text-outline font-medium mt-1">Pending DNS</div>
+</td>
+<td class="py-space-md px-space-lg text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-primary" title="Manage Tenant">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+<button class="p-1.5 rounded-full hover:bg-surface-container-high text-secondary" title="View Audit Logs">
+<span class="material-symbols-outlined text-[20px]">history_edu</span>
+</button>
+<button class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-primary-fixed hover:text-on-primary-fixed font-label-sm text-label-sm transition-all" title="Review Provisioning Pipeline">
+                  Verify DNS
+                </button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination & Partition Summary -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="font-label-sm text-label-sm text-on-surface-variant">
+        Displaying 1–5 of 142 institutional partitions • Multi-tenant cluster latency: <strong class="text-on-surface">19ms</strong>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant shadow-sm hover:text-on-surface" disabled="">Previous</button>
+<span class="px-3 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-semibold">1</span>
+<button class="px-3 py-1 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface hover:bg-secondary-fixed">2</button>
+<button class="px-3 py-1 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface hover:bg-secondary-fixed">3</button>
+<span class="text-outline text-label-sm">...</span>
+<button class="px-3 py-1 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface hover:bg-secondary-fixed">29</button>
+<button class="px-3 py-1 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface shadow-sm hover:bg-secondary-fixed">Next</button>
+</div>
+</div>
+</div>
+<!-- Bottom Visual Showcase & Operational Telemetry Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Visual 1: Physical Infrastructure Inspection -->
+<div class="relative rounded-2xl overflow-hidden bg-surface-container-low shadow-sm p-space-lg flex flex-col justify-between">
+<div class="relative z-10">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm font-bold uppercase tracking-wider mb-space-sm shadow-sm">
+<span class="material-symbols-outlined text-[14px]">apartment</span>
+          Campus Infrastructure
+        </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Physical Asset Auditing</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Autonomous dispatch checks across 1,200 dorm wings and residential towers.</p>
+</div>
+<div class="mt-space-md rounded-xl overflow-hidden shadow-sm h-44 relative">
+<img class="w-full h-full object-cover" data-alt="Modern architectural university campus dorm quadrangle in soft daylight, student residents walking, clean concrete pathways, lush green lawn, sharp architectural lines, collegiate institutional elegance, cinematic photography in soft sky blue and warm ivory tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_lssH-p0TJb-bgJbteRmUzYIlhJsQYIfxJxoWax1JegsbtOpSpXkwzuz39AIJhzH88sG28ZV4cGIq6vkDrwHQDGYrCm3z0NfcEaQindzOxaVPIjinNa8qB54N28itHxGCEinKiilo0bc8ZnrY3KiCHifNhm0sumt2dwwg3HoAtbCWu-0wgoYlWsEkigBiULtzMvH5Bmsjulnl8_3cEJSgaXY0oJJITDMUz5s_8imqx3fT1dAOzsjx"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 to-transparent flex items-end p-space-md">
+<span class="text-surface font-label-sm text-label-sm">IIT Delhi — Himadri Hostel Inspection Live</span>
+</div>
+</div>
+</div>
+<!-- Visual 2: Global Maintenance Worker Kudos & Welfare -->
+<div class="relative rounded-2xl overflow-hidden bg-surface-container-low shadow-sm p-space-lg flex flex-col justify-between">
+<div class="relative z-10">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold uppercase tracking-wider mb-space-sm shadow-sm">
+<span class="material-symbols-outlined text-[14px]">volunteer_activism</span>
+          Worker Welfare
+        </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Autonomous Kudos Fund</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Direct micro-incentives distributed to electricians, carpenters &amp; sanitation workers.</p>
+</div>
+<div class="mt-space-md rounded-xl overflow-hidden shadow-sm h-44 relative">
+<img class="w-full h-full object-cover" data-alt="Close up portrait of a smiling Indian campus maintenance technician holding a digital tablet with pride, wearing a navy work jacket, campus building in soft focus background, warm sun rays, authentic dignity of labor, cinematic warm and cobalt lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcvPDNc8hrroFcp5Qs06NigSyDTuklQ0rgcbpUzrApX0LwzswPO6juo5V4vecpbI1L48uRHTmB-oul15_yocKkltg7dHk_jHchEGiYNLjiH9n3gS169k4pqSZq5NhiKES6Xv8TdhTZzG-c8CT9dSC3MwkWCswp9X41nkGDfzLfe4EAPGAZMUcaHJ9qjMw5RDTp9Bz1AfeFcMg09NkiN6UF-bJ-FgHY8Z_gP5KDoK0_wOwVvCzJKmnF"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 to-transparent flex items-end p-space-md">
+<span class="text-surface font-label-sm text-label-sm">INR 4,82,400 Disbursed this cycle</span>
+</div>
+</div>
+</div>
+<!-- Visual 3: Live Civic Pulse Radial Monitor -->
+<div class="rounded-2xl bg-surface-container-low shadow-sm p-space-lg flex flex-col justify-between">
+<div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold uppercase tracking-wider mb-space-sm">
+<span class="material-symbols-outlined text-[14px]">analytics</span>
+          Network Resolution Index
+        </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Community Trust Score</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Calculated via resident upvotes, resolution speed, and warden responsiveness.</p>
+</div>
+<div class="my-space-md flex items-center justify-center gap-space-lg">
+<div class="relative w-28 h-28 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-high" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary stroke-current" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-dasharray="94, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div class="absolute flex flex-col items-center">
+<span class="font-headline-md text-headline-md text-on-surface font-bold leading-none">94%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Index</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5 font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="text-on-surface font-medium">94.8% SLA Target Met</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="text-on-surface font-medium">98.2% Resident Net Upvotes</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="text-on-surface font-medium">1.8h Escalation Response</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Zero unresolved leaks &gt; 48h</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Grade A+ Sovereign</span>
+</div>
+</div>
+</div>
+<!-- Interactive Slide-Over / Provisioning Modal (Vanilla JS Controlled) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-on-surface/40 backdrop-blur-sm hidden" id="modal-provision">
+<div class="w-full max-w-xl bg-surface-container-lowest rounded-2xl shadow-2xl p-space-xl relative">
+<div class="flex items-center justify-between pb-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Subdomain Deployer</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Provision Institutional Partition</h2>
+</div>
+<button class="p-2 rounded-full hover:bg-surface-container text-on-surface-variant" id="modal-close">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-md mt-space-md">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold block mb-1">Institution Legal Name</label>
+<input class="w-full px-4 py-2.5 rounded-full bg-surface-container-low font-body-md text-body-md text-on-surface outline-none focus:ring-2 focus:ring-primary" placeholder="e.g. Indian Institute of Science (IISc)" type="text"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold block mb-1">Target Subdomain Slug</label>
+<div class="flex items-center">
+<input class="w-1/2 px-4 py-2.5 rounded-l-full bg-surface-container-low font-body-md text-body-md text-on-surface outline-none focus:ring-2 focus:ring-primary" placeholder="iisc" type="text"/>
+<span class="w-1/2 px-4 py-2.5 bg-surface-container font-label-md text-label-md text-on-surface-variant rounded-r-full select-none">.campusconnect.edu</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold block mb-1">Institution Classification</label>
+<select class="w-full px-4 py-2.5 rounded-full bg-surface-container-low font-body-md text-body-md text-on-surface outline-none">
+<option>University Campus</option>
+<option>Independent Hostel Hall</option>
+<option>Residential Society / HOA</option>
+<option>Corporate Tech Park</option>
+</select>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold block mb-1">Initial Resident Quota</label>
+<input class="w-full px-4 py-2.5 rounded-full bg-surface-container-low font-body-md text-body-md text-on-surface outline-none" placeholder="5000" type="number"/>
+</div>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold block mb-1">Primary Dean / Chief Warden Email</label>
+<input class="w-full px-4 py-2.5 rounded-full bg-surface-container-low font-body-md text-body-md text-on-surface outline-none" placeholder="warden-in-chief@institution.ac.in" type="email"/>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm mt-space-lg pt-space-md">
+<button class="px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface" id="modal-cancel">
+          Cancel
+        </button>
+<button class="px-space-lg py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-md hover:bg-surface-tint" id="modal-submit">
+          Deploy Subdomain &amp; Issue SSL
+        </button>
+</div>
+</div>
+</div>
+<script>
+    // Live Search Filter for Tenants
+    const searchInput = document.getElementById('campus-search');
+    const tableRows = document.querySelectorAll('.tenant-row');
+    const filterTabs = document.querySelectorAll('.filter-tab');
+
+    let currentCategory = 'all';
+
+    function applyFilters() {
+      const query = (searchInput.value || '').toLowerCase();
+
+      tableRows.forEach(row => {
+        const text = row.innerText.toLowerCase();
+        const rowType = row.getAttribute('data-type');
+        const matchesQuery = text.includes(query);
+        const matchesCategory = currentCategory === 'all' || rowType === currentCategory;
+
+        if (matchesQuery && matchesCategory) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+
+    if (searchInput) {
+      searchInput.addEventListener('input', applyFilters);
+    }
+
+    filterTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        filterTabs.forEach(t => {
+          t.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-semibold');
+          t.classList.add('text-on-surface-variant');
+        });
+        tab.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-semibold');
+        tab.classList.remove('text-on-surface-variant');
+
+        currentCategory = tab.getAttribute('data-category');
+        applyFilters();
+      });
+    });
+
+    // Provisioning Modal toggle
+    const btnProvision = document.getElementById('btn-provision');
+    const modal = document.getElementById('modal-provision');
+    const modalClose = document.getElementById('modal-close');
+    const modalCancel = document.getElementById('modal-cancel');
+    const modalSubmit = document.getElementById('modal-submit');
+
+    function toggleModal(show) {
+      if (modal) {
+        if (show) {
+          modal.classList.remove('hidden');
+        } else {
+          modal.classList.add('hidden');
+        }
+      }
+    }
+
+    if (btnProvision) btnProvision.addEventListener('click', () => toggleModal(true));
+    if (modalClose) modalClose.addEventListener('click', () => toggleModal(false));
+    if (modalCancel) modalCancel.addEventListener('click', () => toggleModal(false));
+    if (modalSubmit) {
+      modalSubmit.addEventListener('click', () => {
+        alert('Partition deployment initiated! Subdomain DNS route & SSL cert provisioned in background.');
+        toggleModal(false);
+      });
+    }
+  </script>
+</div></div></main><footer class="relative z-10 w-full mt-space-xl py-space-lg px-gutter-mobile md:px-margin"><div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left"><div class="flex items-center gap-space-sm"><div class="w-7 h-7 rounded-full bg-surface-container-lowest/40 flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[16px]">verified</span></div><div><p class="font-headline-sm text-headline-sm text-on-surface">CampusConnect Civic Governance</p><p class="font-body-sm text-body-sm text-on-surface-variant">Transparent Dormitory &amp; Campus Incident Accountability</p></div></div><p class="font-label-sm text-label-sm text-on-surface-variant">© 2025 CampusConnect Framework. Built for Institutional Living.</p></div></footer></body></html>

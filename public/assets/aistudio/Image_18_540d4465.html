@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>CampusConnect</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-fixed": "#dde1ff", "secondary-fixed-dim": "#aec6ff", "outline": "#747687", "surface-container-lowest": "#ffffff", "surface-tint": "#054cec", "surface-variant": "#dae2fd", "on-secondary-fixed": "#001a42", "on-primary-fixed-variant": "#0038b6", "on-surface": "#131b2e", "on-primary": "#ffffff", "on-tertiary-fixed": "#002113", "tertiary-fixed": "#6ffbbe", "on-secondary": "#ffffff", "secondary-fixed": "#d8e2ff", "tertiary-container": "#00704c", "on-tertiary-fixed-variant": "#005236", "on-primary-fixed": "#001452", "tertiary-fixed-dim": "#4edea3", "secondary": "#2a5caf", "outline-variant": "#c3c5d8", "background": "#faf8ff", "primary-fixed-dim": "#b7c4ff", "on-background": "#131b2e", "secondary-container": "#79a5fd", "surface-dim": "#d2d9f4", "on-tertiary-container": "#6af7b9", "surface-container-low": "#f2f3ff", "on-surface-variant": "#434656", "on-error": "#ffffff", "surface-container": "#eaedff", "on-secondary-container": "#00397f", "error-container": "#ffdad6", "error": "#ba1a1a", "primary-container": "#1150ef", "surface": "#faf8ff", "on-tertiary": "#ffffff", "surface-bright": "#faf8ff", "primary": "#003bbe", "tertiary": "#005539", "inverse-on-surface": "#eef0ff", "on-error-container": "#93000a", "inverse-primary": "#b7c4ff", "on-primary-container": "#d6dcff", "on-secondary-fixed-variant": "#004395", "inverse-surface": "#283044", "surface-container-highest": "#dae2fd", "surface-container-high": "#e2e7ff" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "margin-mobile": "1.25rem", "space-md": "1rem", "space-sm": "0.5rem", "gutter-mobile": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "margin": "3rem", "gutter": "1.5rem" }, "fontFamily": { "body-md": ["Archivo Narrow"], "label-lg": ["Archivo Narrow"], "headline-md": ["Playfair Display"], "display-hero": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "label-md": ["Archivo Narrow"], "headline-sm": ["Playfair Display"], "label-sm": ["Archivo Narrow"], "headline-lg": ["Playfair Display"], "body-lg": ["Archivo Narrow"], "body-sm": ["Archivo Narrow"], "display-hero-mobile": ["Playfair Display"] }, "fontSize": { "body-md": ["15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.05em", "fontWeight": "600" }], "headline-md": ["26px", { "lineHeight": "34px", "letterSpacing": "0.02em", "fontWeight": "600" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0.02em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "0.03em", "fontWeight": "700" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "0.02em", "fontWeight": "700" }] } } } };</script></head><body class="min-h-full font-body-md text-body-md text-on-surface bg-gradient-to-b from-primary via-secondary-container to-surface relative selection:bg-primary-fixed selection:text-on-primary-fixed"><div class="pointer-events-none fixed inset-0 z-0 overflow-hidden"><div class="absolute -top-32 left-1/4 w-[600px] h-[600px] rounded-full bg-surface-container-lowest/20 blur-[100px]"></div><div class="absolute top-48 right-10 w-[450px] h-[450px] rounded-full bg-secondary-fixed/25 blur-[90px]"></div><div class="absolute inset-0 flex justify-between pointer-events-none opacity-20"><div class="w-px h-full bg-surface-container-lowest/60 ml-[5%]"></div><div class="w-px h-full bg-surface-container-lowest/60 ml-[30%]"></div><div class="w-px h-full bg-surface-container-lowest/60 ml-[30%]"></div><div class="w-px h-full bg-surface-container-lowest/60 mr-[5%]"></div></div></div><header class="fixed top-0 left-0 right-0 z-50 px-gutter-mobile md:px-margin"><div class="h-20 max-w-6xl mx-auto flex items-center justify-between"><div class="w-full backdrop-blur-xl bg-surface-container-lowest/25 shadow-lg shadow-on-primary-fixed/10 rounded-full px-space-lg py-2.5 flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-surface-container-lowest/90 flex items-center justify-center text-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">account_balance</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-primary leading-tight tracking-tight">CampusConnect</span><span class="font-label-sm text-label-sm text-primary-fixed tracking-wider uppercase">iitd.campusconnect.edu</span></div></div><nav class="hidden lg:flex items-center gap-space-xs p-1 rounded-full bg-surface-container-lowest/15 backdrop-blur-md" data-active-classes="bg-surface-container-lowest text-on-surface font-label-lg shadow-sm"><a class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-primary transition-all hover:bg-surface-container-lowest/20 hover:text-on-primary" data-path="live-issues" href="#">Live Issues</a><a class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-primary transition-all hover:bg-surface-container-lowest/20 hover:text-on-primary" data-path="resolved-history" href="#">Resolved History</a><a class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-primary transition-all hover:bg-surface-container-lowest/20 hover:text-on-primary" data-path="admin-suite" href="#">Admin Suite</a><a aria-current="page" class="px-space-md py-1.5 rounded-full transition-all bg-surface-container-lowest text-on-surface font-label-lg shadow-sm" data-path="worker-tasks" href="#">Worker Tasks</a><a class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-primary transition-all hover:bg-surface-container-lowest/20 hover:text-on-primary" data-path="founder-console" href="#">Founder Console</a></nav><div class="flex items-center gap-space-sm"><a class="hidden sm:inline-flex items-center gap-1.5 px-space-md py-2 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md shadow-md transition-all hover:bg-primary-fixed hover:text-on-primary-fixed" data-path="raise-issue" href="#"><span class="material-symbols-outlined text-[16px]">add</span>Raise Issue</a><button class="relative w-9 h-9 rounded-full bg-surface-container-lowest/20 text-on-primary hover:bg-surface-container-lowest/30 hover:text-on-primary flex items-center justify-center transition-all"><span class="material-symbols-outlined text-[18px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="relative z-10 w-full pt-20 px-gutter-mobile md:px-margin min-h-screen"><div class="max-w-6xl mx-auto my-space-lg bg-surface-container-lowest/95 backdrop-blur-xl rounded-xl shadow-2xl p-space-lg md:p-space-xl transition-all"><div class="flex flex-col w-full">
+<!-- Top Worker Overview & Shift Bar -->
+<div class="relative overflow-hidden rounded-lg bg-gradient-to-r from-primary via-primary-container to-secondary p-space-lg text-on-primary shadow-xl">
+<div class="absolute -right-16 -top-16 h-64 w-64 rounded-full bg-surface-container-lowest/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-10 -bottom-10 h-48 w-48 rounded-full bg-tertiary-fixed/15 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="flex items-start gap-space-md">
+<div class="relative">
+<div class="w-16 h-16 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center shadow-lg font-headline-md text-headline-md">
+            RK
+          </div>
+<span class="absolute bottom-0 right-0 w-4 h-4 rounded-full bg-tertiary-fixed border-2 border-surface-container-lowest shadow-sm" title="Active on Duty"></span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed bg-surface-container-lowest/15 px-2.5 py-0.5 rounded-full backdrop-blur-md">
+              Staff ID: #PL-082
+            </span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary-fixed font-bold bg-tertiary-container/60 px-2.5 py-0.5 rounded-full">
+              Lead Plumber • Zone 3 Central
+            </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-primary tracking-tight mt-1">
+            Ramesh Kumar
+          </h1>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim">
+            Indian Institute of Technology Delhi • Estate Maintenance Division
+          </p>
+</div>
+</div>
+<!-- Live Duty Toggle & Emergency Dispatch Status -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md bg-surface-container-lowest/15 backdrop-blur-md rounded-full px-space-lg py-space-sm border-0 shadow-inner">
+<div class="flex items-center gap-space-sm">
+<div class="w-3 h-3 rounded-full bg-tertiary-fixed animate-ping"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-primary-fixed tracking-wider">Duty Mode</span>
+<span class="font-label-lg text-label-lg text-on-primary">Available for Emergency Dispatch</span>
+</div>
+</div>
+<button class="relative inline-flex h-7 w-14 shrink-0 cursor-pointer rounded-full bg-tertiary transition-colors duration-200 ease-in-out focus:outline-none shadow-md" id="toggle-duty">
+<span class="sr-only">Toggle Emergency Availability</span>
+<span class="translate-x-7 pointer-events-none inline-block h-6 w-6 transform rounded-full bg-surface-container-lowest shadow ring-0 transition duration-200 ease-in-out mt-0.5 ml-0.5" id="toggle-knob"></span>
+</button>
+</div>
+</div>
+<!-- Quick Performance Micro-Metrics Strip -->
+<div class="mt-space-lg grid grid-cols-2 md:grid-cols-4 gap-space-md pt-space-md bg-surface-container-lowest/10 rounded-DEFAULT p-space-md backdrop-blur-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest/20 flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-primary-fixed block">Assigned Today</span>
+<span class="font-headline-sm text-headline-sm text-on-primary leading-tight">4 Work Orders</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest/20 flex items-center justify-center text-tertiary-fixed">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-primary-fixed block">Resolved This Month</span>
+<span class="font-headline-sm text-headline-sm text-on-primary leading-tight">58 Completed</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest/20 flex items-center justify-center text-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]">stars</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-primary-fixed block">Rating Score</span>
+<span class="font-headline-sm text-headline-sm text-on-primary leading-tight">4.97★ <span class="font-body-sm text-body-sm text-primary-fixed font-normal">(142 reviews)</span></span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest/20 flex items-center justify-center text-tertiary-fixed">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-primary-fixed block">Kudos Incentive</span>
+<span class="font-headline-sm text-headline-sm text-tertiary-fixed leading-tight">Eligible: ₹4,200</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Work Queue and Active Resolution Workspace Grid -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-xl mt-space-xl items-start">
+<!-- LEFT PANEL: Priority Queue (7 Cols) -->
+<div class="xl:col-span-7 flex flex-col gap-space-lg">
+<div class="flex items-center justify-between pb-space-xs">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Field Execution Log</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Assigned Task Queue</h2>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container px-3 py-1.5 rounded-full text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary">sort</span>
+<span class="font-label-sm text-label-sm">Urgency Ranked</span>
+</div>
+</div>
+<!-- JOB 1: CRITICAL ACTIVE TICKET -->
+<div class="group relative rounded-lg bg-surface-container-lowest p-space-lg shadow-xl transition-all hover:shadow-2xl">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm uppercase tracking-wider font-bold inline-flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+                In Progress • High Severity
+              </span>
+<span class="font-label-sm text-label-sm text-outline">Ticket #IITD-4089</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1 group-hover:text-primary transition-colors">
+              Main Riser Pipe Joint Leakage &amp; Low Water Pressure
+            </h3>
+</div>
+<div class="w-12 h-12 rounded-full bg-error-container/40 flex items-center justify-center text-error shrink-0">
+<span class="material-symbols-outlined text-[26px]">water_damage</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+          Pressurized riser coupling fractured on the 3rd floor duct. Downward water seep threatens room electrical conduits and has completely severed supply to North Wing showers.
+        </p>
+<!-- Location & Resident Info Pill -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm mt-space-md">
+<div class="flex items-center gap-space-sm p-space-sm bg-surface-container-low rounded-DEFAULT">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm text-outline block uppercase">Hostel Location</span>
+<span class="font-label-lg text-label-lg text-on-surface truncate block font-bold">Kumaon Hostel, Wing B, 3rd Floor</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm bg-surface-container-low rounded-DEFAULT">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[18px]">person</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm text-outline block uppercase">Prefect / Contact</span>
+<a class="font-label-lg text-label-lg text-primary truncate block hover:underline font-bold" href="tel:+919876543210">Aryan S. (Room 312) • Tap Call</a>
+</div>
+</div>
+</div>
+<!-- Metric Badges & Timers -->
+<div class="flex flex-wrap items-center justify-between gap-space-md mt-space-md pt-space-sm text-outline">
+<div class="flex items-center gap-space-md">
+<span class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-error">schedule</span>
+              Reported 42m ago
+            </span>
+<span class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">groups</span>
+              142 Students Affected
+            </span>
+</div>
+<button class="inline-flex items-center gap-2 px-space-lg py-2.5 rounded-full bg-primary text-on-primary font-label-lg text-label-lg hover:bg-primary-container shadow-md transition-all active:scale-95" onclick="document.getElementById('modal-resolution').scrollIntoView({behavior: 'smooth'})">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+            Mark as Solved &amp; Submit Proof
+          </button>
+</div>
+</div>
+<!-- JOB 2: SCHEDULED TICKET -->
+<div class="rounded-lg bg-surface-container-lowest p-space-lg shadow-md transition-all hover:shadow-lg">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="px-3 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider font-bold">
+                Scheduled
+              </span>
+<span class="font-label-sm text-label-sm text-outline">Ticket #IITD-4074</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">
+              Solar Water Heater Thermostat Recalibration
+            </h3>
+</div>
+<div class="w-11 h-11 rounded-full bg-secondary-fixed/40 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[24px]">wb_sunny</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+          Sensor reading stuck at 74°C resulting in intermittent emergency valve blow-offs. Requires digital sensor reset and calibration test.
+        </p>
+<div class="flex flex-wrap items-center justify-between gap-space-sm mt-space-md pt-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-outline">home_pin</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Nilgiri Hostel, Rooftop Array</span>
+<span class="font-label-sm text-label-sm text-outline">• ETA: 2:00 PM today</span>
+</div>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-high text-on-surface hover:bg-surface-variant font-label-md text-label-md transition-colors">
+            View Specification
+          </button>
+</div>
+</div>
+<!-- JOB 3: ON HOLD / PARTS ORDERED -->
+<div class="rounded-lg bg-surface-container-lowest p-space-lg shadow-md transition-all hover:shadow-lg">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="px-3 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider font-bold">
+                On Hold • Parts Requisitioned
+              </span>
+<span class="font-label-sm text-label-sm text-outline">Ticket #IITD-4061</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">
+              Kitchen Dishwashing Line Grease Trap Replacement
+            </h3>
+</div>
+<div class="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center text-outline shrink-0">
+<span class="material-symbols-outlined text-[24px]">soup_kitchen</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+          Cast iron chamber deteriorated with severe fat deposition. Store requisition #REQ-992 filed for commercial baffle unit. Awaiting central warehouse clearance.
+        </p>
+<div class="flex flex-wrap items-center justify-between gap-space-sm mt-space-md pt-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-outline">location_city</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Central Dining Hall #2</span>
+<span class="font-label-sm text-label-sm text-outline">• Estimated Parts Arrival: Tomorrow Morning</span>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-[15px]">pending</span>
+            Pending Store Release
+          </span>
+</div>
+</div>
+</div>
+<!-- RIGHT PANEL: Dedicated 'Mark as Solved' Interactive Verification Workspace (5 Cols) -->
+<div class="xl:col-span-5 bg-surface-container-low rounded-xl p-space-lg shadow-xl relative transition-all" id="modal-resolution">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed shadow-sm">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</span>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Resolution Drawer</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Resolve Work Order #IITD-4089</h3>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-highest text-primary font-bold uppercase">
+          Live Form
+        </span>
+</div>
+<div class="p-space-sm bg-surface-container rounded-DEFAULT mb-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase">Active Case</span>
+<span class="font-label-sm text-label-sm font-semibold text-primary">Kumaon Hostel • Riser Leak</span>
+</div>
+</div>
+<form class="flex flex-col gap-space-md" onsubmit="event.preventDefault(); document.getElementById('confirmation-toast').classList.remove('hidden');">
+<!-- Resolution Notes -->
+<div class="flex flex-col gap-1">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center justify-between">
+<span>Resolution Notes (What was fixed?):</span>
+<span class="font-label-sm text-label-sm text-outline font-normal">Audit Trail Log</span>
+</label>
+<textarea class="w-full rounded-DEFAULT bg-surface-container-lowest p-space-sm text-body-md font-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm resize-none" placeholder="Detail action steps taken..." rows="3">Replaced cracked 2-inch CPVC valve union with heavy-duty brass ball valve. Tested line pressure to 4.2 bar; zero leakage detected. Floor dried and disinfected.</textarea>
+</div>
+<!-- Before & After Photographic Verification -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Attach Completion Proof</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold uppercase">Mandatory Sign-off</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Photos are timestamped and reviewed by the Hostel Warden &amp; Reporting Student.</p>
+<div class="grid grid-cols-2 gap-space-sm mt-1">
+<!-- Initial Problem Photo (Pre-linked) -->
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline font-semibold">1. Before (From Student)</span>
+<div class="relative h-28 rounded-DEFAULT overflow-hidden bg-surface-container shadow-sm group">
+<img class="w-full h-full object-cover" data-alt="Close up shot of a cracked PVC plumbing pipe joint spraying water in a concrete utility duct of an institutional dormitory, dim basement fluorescent lighting with puddles forming on floor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSNmDbRWyw8PSdB3aztcTZuHtPlV7VVklYaUDF7R9OHKsfq_8BvBjn_3wSPKeDoLW-LGnU3Vsa9nHNuHTXB_-9iKg0FRy2eRZcTp_xMgMun8qwn_gnNAQlnJBWhhbOaJu1QVFgUYnDu7ob2drGV8nCz8-14L3FsQXpeEZ0wHLLEDc9_J2eqkoX_2mcqJC6xEnYhn5iobuWRXZ2IwoKzXYh2iJT-0BK5MDzwAxE8yzydVpeRoXOGvaK"/>
+<span class="absolute bottom-1 left-1 bg-surface-container-lowest/90 px-1.5 py-0.5 rounded-full font-label-sm text-label-sm text-error font-bold flex items-center gap-1 shadow-xs">
+<span class="material-symbols-outlined text-[12px]">broken_image</span>
+                  Broken CPVC
+                </span>
+</div>
+</div>
+<!-- Uploaded Resolution Photo -->
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">2. After (Staff Proof)</span>
+<div class="relative h-28 rounded-DEFAULT overflow-hidden bg-surface-container shadow-sm">
+<img class="w-full h-full object-cover" data-alt="High quality close up photograph of a brand new gleaming golden brass ball valve cleanly plumbed into an industrial water pipe system with white teflon tape visible, dry clean concrete wall background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB81GN9Heypektye2nGEyziL8Z20fHXANop1ee_l2CbwgeYEK_gkiyBWurBwQEj0c6WyLpcVawj88Pa7_CCHOvNi9zJZQyhXC-EEHCmZWZL_tJP1SbfyWSwhmr4PCnD6dEwvIW82uEOx16vKxku8U9TTTJQ85ZlXgyOCoHl-xUiFt6wrnbpb_af0QPaW4MEQM09Z6VK3x1F0KdXSDXRxC3LYwyb1_wY0Cp2FE2oFIky3Mi7OTa0gozy"/>
+<span class="absolute bottom-1 left-1 bg-surface-container-lowest/95 px-1.5 py-0.5 rounded-full font-label-sm text-label-sm text-tertiary font-bold flex items-center gap-1 shadow-xs">
+<span class="material-symbols-outlined text-[12px]">verified</span>
+                  Brass Ball Valve
+                </span>
+<button class="absolute top-1 right-1 w-6 h-6 rounded-full bg-surface-container-lowest/80 text-on-surface flex items-center justify-center hover:bg-surface-container-lowest shadow-sm" title="Retake photo" type="button">
+<span class="material-symbols-outlined text-[14px]">photo_camera</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Parts Used Requisition Field -->
+<div class="flex flex-col gap-1">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center justify-between">
+<span>Parts Used from Inventory:</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Auto-deducts Central Store</span>
+</label>
+<div class="relative">
+<input class="w-full rounded-full bg-surface-container-lowest px-4 py-2.5 text-body-md font-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" type="text" value="1x 2-inch Brass Ball Valve, Teflon tape roll"/>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-[20px] text-outline">inventory_2</span>
+</div>
+</div>
+<!-- Worker Signature / Identity Assurance -->
+<div class="p-space-sm rounded-DEFAULT bg-surface-container flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">draw</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Authorized Field Confirmation</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold truncate">Confirmed by Ramesh Kumar (Staff #PL-082)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Geo-location stamped at Kumaon Wing B</span>
+</div>
+</div>
+<!-- Action Button -->
+<button class="w-full mt-space-xs py-3 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg shadow-lg flex items-center justify-center gap-2 transition-all active:scale-95" type="submit">
+<span class="material-symbols-outlined text-[20px]">send_and_archive</span>
+          Submit Verified Resolution to Warden &amp; Students
+        </button>
+</form>
+<!-- Successful Submission Feedback Notification (Hidden by default, triggered by JS) -->
+<div class="hidden absolute inset-0 bg-surface-container-lowest/98 backdrop-blur-md rounded-xl p-space-lg flex flex-col items-center justify-center text-center z-20 shadow-2xl" id="confirmation-toast">
+<div class="w-16 h-16 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center mb-space-md shadow-lg">
+<span class="material-symbols-outlined text-[36px]">check_circle</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Work Order Successfully Marked Solved!</h4>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mt-space-xs">
+          High-resolution proof and pressure telemetry submitted to Warden Dr. R. Verma. Kudos bonus credit added to Ramesh's payroll tally.
+        </p>
+<button class="mt-space-lg px-space-lg py-2 rounded-full bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-colors" onclick="document.getElementById('confirmation-toast').classList.add('hidden')">
+          Dismiss &amp; View Next Queue Item
+        </button>
+</div>
+</div>
+</div>
+<!-- Interactive JavaScript for Field Toggles -->
+<script>
+    (function initWorkerPanel() {
+      const toggle = document.getElementById('toggle-duty');
+      const knob = document.getElementById('toggle-knob');
+      let active = true;
+
+      if (toggle && knob) {
+        toggle.addEventListener('click', function() {
+          active = !active;
+          if (active) {
+            knob.classList.add('translate-x-7');
+            knob.classList.remove('translate-x-0');
+            toggle.classList.remove('bg-outline');
+            toggle.classList.add('bg-tertiary');
+          } else {
+            knob.classList.remove('translate-x-7');
+            knob.classList.add('translate-x-0');
+            toggle.classList.remove('bg-tertiary');
+            toggle.classList.add('bg-outline');
+          }
+        });
+      }
+    })();
+  </script>
+</div></div></main><footer class="relative z-10 w-full mt-space-xl py-space-lg px-gutter-mobile md:px-margin"><div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left"><div class="flex items-center gap-space-sm"><div class="w-7 h-7 rounded-full bg-surface-container-lowest/40 flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[16px]">verified</span></div><div><p class="font-headline-sm text-headline-sm text-on-surface">CampusConnect Civic Governance</p><p class="font-body-sm text-body-sm text-on-surface-variant">Transparent Dormitory &amp; Campus Incident Accountability</p></div></div><p class="font-label-sm text-label-sm text-on-surface-variant">© 2025 CampusConnect Framework. Built for Institutional Living.</p></div></footer></body></html>

@@ -1,0 +1,6 @@
+{
+  "name": "CampusConnect",
+  "description": "Multi-tenant campus issue resolution platform with AI triage, role-based workflows, upvoting, and live updates.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

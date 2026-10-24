@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>CampusConnect</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-fixed": "#dde1ff", "secondary-fixed-dim": "#aec6ff", "outline": "#747687", "surface-container-lowest": "#ffffff", "surface-tint": "#054cec", "surface-variant": "#dae2fd", "on-secondary-fixed": "#001a42", "on-primary-fixed-variant": "#0038b6", "on-surface": "#131b2e", "on-primary": "#ffffff", "on-tertiary-fixed": "#002113", "tertiary-fixed": "#6ffbbe", "on-secondary": "#ffffff", "secondary-fixed": "#d8e2ff", "tertiary-container": "#00704c", "on-tertiary-fixed-variant": "#005236", "on-primary-fixed": "#001452", "tertiary-fixed-dim": "#4edea3", "secondary": "#2a5caf", "outline-variant": "#c3c5d8", "background": "#faf8ff", "primary-fixed-dim": "#b7c4ff", "on-background": "#131b2e", "secondary-container": "#79a5fd", "surface-dim": "#d2d9f4", "on-tertiary-container": "#6af7b9", "surface-container-low": "#f2f3ff", "on-surface-variant": "#434656", "on-error": "#ffffff", "surface-container": "#eaedff", "on-secondary-container": "#00397f", "error-container": "#ffdad6", "error": "#ba1a1a", "primary-container": "#1150ef", "surface": "#faf8ff", "on-tertiary": "#ffffff", "surface-bright": "#faf8ff", "primary": "#003bbe", "tertiary": "#005539", "inverse-on-surface": "#eef0ff", "on-error-container": "#93000a", "inverse-primary": "#b7c4ff", "on-primary-container": "#d6dcff", "on-secondary-fixed-variant": "#004395", "inverse-surface": "#283044", "surface-container-highest": "#dae2fd", "surface-container-high": "#e2e7ff" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "margin-mobile": "1.25rem", "space-md": "1rem", "space-sm": "0.5rem", "gutter-mobile": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "margin": "3rem", "gutter": "1.5rem" }, "fontFamily": { "body-md": ["Archivo Narrow"], "label-lg": ["Archivo Narrow"], "headline-md": ["Playfair Display"], "display-hero": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "label-md": ["Archivo Narrow"], "headline-sm": ["Playfair Display"], "label-sm": ["Archivo Narrow"], "headline-lg": ["Playfair Display"], "body-lg": ["Archivo Narrow"], "body-sm": ["Archivo Narrow"], "display-hero-mobile": ["Playfair Display"] }, "fontSize": { "body-md": ["15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.05em", "fontWeight": "600" }], "headline-md": ["26px", { "lineHeight": "34px", "letterSpacing": "0.02em", "fontWeight": "600" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0.02em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "0.03em", "fontWeight": "700" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "0.02em", "fontWeight": "700" }] } } } };</script></head><body class="min-h-full font-body-md text-body-md text-on-surface bg-gradient-to-b from-primary via-secondary-container to-surface relative selection:bg-primary-fixed selection:text-on-primary-fixed"><div class="pointer-events-none fixed inset-0 z-0 overflow-hidden"><div class="absolute -top-32 left-1/4 w-[600px] h-[600px] rounded-full bg-surface-container-lowest/20 blur-[100px]"></div><div class="absolute top-48 right-10 w-[450px] h-[450px] rounded-full bg-secondary-fixed/25 blur-[90px]"></div><div class="absolute inset-0 flex justify-between pointer-events-none opacity-20"><div class="w-px h-full bg-surface-container-lowest/60 ml-[5%]"></div><div class="w-px h-full bg-surface-container-lowest/60 ml-[30%]"></div><div class="w-px h-full bg-surface-container-lowest/60 ml-[30%]"></div><div class="w-px h-full bg-surface-container-lowest/60 mr-[5%]"></div></div></div><header class="fixed top-0 left-0 right-0 z-50 px-gutter-mobile md:px-margin"><div class="h-20 max-w-6xl mx-auto flex items-center justify-between"><div class="w-full backdrop-blur-xl bg-surface-container-lowest/25 shadow-lg shadow-on-primary-fixed/10 rounded-full px-space-lg py-2.5 flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-surface-container-lowest/90 flex items-center justify-center text-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">account_balance</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-primary leading-tight tracking-tight">CampusConnect</span><span class="font-label-sm text-label-sm text-primary-fixed tracking-wider uppercase">iitd.campusconnect.edu</span></div></div><nav class="hidden lg:flex items-center gap-space-xs p-1 rounded-full bg-surface-container-lowest/15 backdrop-blur-md" data-active-classes="bg-surface-container-lowest text-on-surface font-label-lg shadow-sm"><a class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-primary transition-all hover:bg-surface-container-lowest/20 hover:text-on-primary" data-path="live-issues" href="#">Live Issues</a><a class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-primary transition-all hover:bg-surface-container-lowest/20 hover:text-on-primary" data-path="resolved-history" href="#">Resolved History</a><a aria-current="page" class="px-space-md py-1.5 rounded-full transition-all bg-surface-container-lowest text-on-surface font-label-lg shadow-sm" data-path="admin-suite" href="#">Admin Suite</a><a class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-primary transition-all hover:bg-surface-container-lowest/20 hover:text-on-primary" data-path="worker-tasks" href="#">Worker Tasks</a><a class="px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-primary transition-all hover:bg-surface-container-lowest/20 hover:text-on-primary" data-path="founder-console" href="#">Founder Console</a></nav><div class="flex items-center gap-space-sm"><a class="hidden sm:inline-flex items-center gap-1.5 px-space-md py-2 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md shadow-md transition-all hover:bg-primary-fixed hover:text-on-primary-fixed" data-path="raise-issue" href="#"><span class="material-symbols-outlined text-[16px]">add</span>Raise Issue</a><button class="relative w-9 h-9 rounded-full bg-surface-container-lowest/20 text-on-primary hover:bg-surface-container-lowest/30 hover:text-on-primary flex items-center justify-center transition-all"><span class="material-symbols-outlined text-[18px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="relative z-10 w-full pt-20 px-gutter-mobile md:px-margin min-h-screen"><div class="max-w-6xl mx-auto my-space-lg bg-surface-container-lowest/95 backdrop-blur-xl rounded-xl shadow-2xl p-space-lg md:p-space-xl transition-all"><div class="flex flex-col w-full">
+<!-- Top Admin Suite Header -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg mb-space-xl pb-space-lg">
+<div class="space-y-space-xs max-w-2xl">
+<div class="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-primary-fixed text-on-primary-fixed text-label-sm font-label-sm tracking-wider uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+        Estate Dispatch Operations
+      </div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+        Campus Governance &amp; Dispatch Console
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        IIT Delhi Estate, Hostels &amp; Physical Infrastructure Control Hub
+      </p>
+</div>
+<!-- Actions Toolbar -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="inline-flex items-center gap-space-xs px-space-lg py-2.5 rounded-full bg-error text-on-error font-label-md text-label-md shadow-md hover:opacity-95 transition-all" id="broadcastModalTrigger">
+<span class="material-symbols-outlined text-[18px]">campaign</span>
+        + Broadcast Campus Alert
+      </button>
+<button class="inline-flex items-center gap-space-xs px-space-lg py-2.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container-highest transition-all">
+<span class="material-symbols-outlined text-[18px]">download</span>
+        Export Audit CSV
+      </button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container-highest transition-all" title="Configure SLA Parameters">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+        SLA Settings
+      </button>
+</div>
+</div>
+<!-- KPI Overview Numbers: 4 Soft Sky Tint Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-xl">
+<!-- KPI 1 -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-sm hover:shadow-md transition-all">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-secondary-fixed/30 pointer-events-none blur-xl"></div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Active Live Issues</span>
+<span class="material-symbols-outlined text-primary text-[20px]">warning</span>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-headline-lg text-headline-lg text-on-surface font-semibold">24</span>
+<span class="inline-flex items-center font-label-sm text-label-sm text-tertiary font-bold">
+<span class="material-symbols-outlined text-[14px]">trending_down</span>
+          -12% vs last wk
+        </span>
+</div>
+<div class="mt-space-sm flex items-center gap-1.5 text-body-sm font-body-sm text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-error"></span> 3 Escalated critically
+      </div>
+</div>
+<!-- KPI 2 -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-sm hover:shadow-md transition-all">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-primary-fixed/30 pointer-events-none blur-xl"></div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Avg Resolution Time</span>
+<span class="material-symbols-outlined text-primary text-[20px]">timer</span>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-headline-lg text-headline-lg text-on-surface font-semibold">2h 15m</span>
+</div>
+<div class="mt-space-sm flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Target: &lt;4h</span>
+<span class="text-tertiary font-bold bg-tertiary-fixed/40 px-2 py-0.5 rounded-full">SLA Met 94.8%</span>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-sm hover:shadow-md transition-all">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-tertiary-fixed/30 pointer-events-none blur-xl"></div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Verified Solved</span>
+<span class="material-symbols-outlined text-tertiary text-[20px]">task_alt</span>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-headline-lg text-headline-lg text-on-surface font-semibold">342</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">repairs</span>
+</div>
+<div class="mt-space-sm text-body-sm font-body-sm text-on-surface-variant">
+<span class="font-bold text-on-surface">100%</span> residential sign-off rate
+      </div>
+</div>
+<!-- KPI 4 -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-sm hover:shadow-md transition-all">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-secondary-container/20 pointer-events-none blur-xl"></div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Active Staff On-Duty</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">badge</span>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-headline-lg text-headline-lg text-on-surface font-semibold">22</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">personnel</span>
+</div>
+<div class="mt-space-sm flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface">18 Techs</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface">4 Wardens</span>
+</div>
+</div>
+</div>
+<!-- Primary Interactive Split Navigation / Tabs Selector -->
+<div class="flex items-center justify-between border-b border-surface-variant pb-space-sm mb-space-lg">
+<div class="flex items-center gap-space-sm">
+<button class="px-space-lg py-2 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-sm transition-all flex items-center gap-space-xs" id="tabQueueBtn">
+<span class="material-symbols-outlined text-[18px]">inbox</span>
+        Tickets &amp; Dispatch Queue
+      </button>
+<button class="px-space-lg py-2 rounded-full bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-all flex items-center gap-space-xs" id="tabPeopleBtn">
+<span class="material-symbols-outlined text-[18px]">group</span>
+        Campus Staff &amp; Authority
+      </button>
+</div>
+<div class="hidden md:flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">sync</span>
+      Live Sync: IITD Net Node 04
+    </div>
+</div>
+<!-- PANEL A: ALL CAMPUS TICKETS & DISPATCH QUEUE -->
+<section class="flex flex-col space-y-space-md transition-opacity" id="panelQueue">
+<!-- Sub Filters -->
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="filter-pill active-pill px-space-md py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-sm" data-filter="all">All (24)</button>
+<button class="filter-pill px-space-md py-1.5 rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm" data-filter="unassigned">Unassigned (5)</button>
+<button class="filter-pill px-space-md py-1.5 rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm" data-filter="inprogress">In Progress (14)</button>
+<button class="filter-pill px-space-md py-1.5 rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm" data-filter="escalated">Escalated (3)</button>
+<button class="filter-pill px-space-md py-1.5 rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm" data-filter="pending">Pending Verification (2)</button>
+</div>
+<!-- Quick Search -->
+<div class="relative w-full sm:w-64">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full pl-9 pr-4 py-2 rounded-full bg-surface-container-low text-body-sm font-body-sm text-on-surface placeholder-on-surface-variant focus:bg-surface focus:outline-none shadow-sm" placeholder="Search ticket, wing, or id..." type="text"/>
+</div>
+</div>
+<!-- Dispatch Table / List Sheet -->
+<div class="rounded-xl bg-surface-container-lowest shadow-md overflow-hidden">
+<!-- Table Header -->
+<div class="hidden lg:grid grid-cols-12 gap-space-md px-space-lg py-space-sm bg-surface-container-low text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider">
+<div class="col-span-2">Ticket ID &amp; Priority</div>
+<div class="col-span-4">Issue Description &amp; Location</div>
+<div class="col-span-1 text-center">Upvotes</div>
+<div class="col-span-3">Assigned Technician</div>
+<div class="col-span-2 text-right">Dispatch Actions</div>
+</div>
+<!-- Rows -->
+<div class="divide-y divide-surface-container">
+<!-- Ticket 1 (Escalated / Urgent) -->
+<div class="ticket-row p-space-md lg:px-space-lg lg:py-space-md grid grid-cols-1 lg:grid-cols-12 gap-space-sm lg:gap-space-md items-center hover:bg-surface-container-low/40 transition-colors" data-status="escalated">
+<div class="col-span-2 flex items-center justify-between lg:justify-start lg:flex-col lg:items-start gap-1">
+<span class="font-label-md text-label-md font-bold text-primary">#IITD-8821</span>
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-error-container text-on-error-container text-label-sm font-label-sm font-bold uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> Urgent
+            </span>
+</div>
+<div class="col-span-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug">Main Substation Tripping &amp; Phase Drop</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+              Aravali Hostel — Wing B Ground Junction Box
+            </p>
+<span class="inline-block mt-1 text-label-sm font-label-sm text-on-surface-variant">Reported 28m ago by Resident Council</span>
+</div>
+<div class="col-span-1 flex lg:justify-center items-center">
+<div class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>
+<span>42</span>
+</div>
+</div>
+<div class="col-span-3">
+<div class="relative">
+<select class="w-full py-2 px-space-sm rounded-full bg-surface-container-low text-body-sm font-body-sm text-on-surface focus:outline-none shadow-sm cursor-pointer border-0">
+<option selected="">Assign to Sunil K. (Electrician)</option>
+<option>Assign to Manoj Sharma (Lead)</option>
+<option>Assign to Ramesh K. (Plumber)</option>
+<option>Unassigned</option>
+</select>
+</div>
+</div>
+<div class="col-span-2 flex items-center justify-end gap-space-xs">
+<button class="px-space-sm py-1.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed hover:bg-tertiary-fixed-dim text-label-sm font-label-sm transition-all" title="Mark Resolved">
+              Resolved
+            </button>
+<button class="px-space-sm py-1.5 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high text-label-sm font-label-sm transition-all" title="Re-assign">
+              Re-assign
+            </button>
+<button class="p-1.5 rounded-full bg-error-container text-on-error-container hover:opacity-80 transition-all" title="Escalate Further">
+<span class="material-symbols-outlined text-[18px]">priority_high</span>
+</button>
+</div>
+</div>
+<!-- Ticket 2 (In Progress / Medium) -->
+<div class="ticket-row p-space-md lg:px-space-lg lg:py-space-md grid grid-cols-1 lg:grid-cols-12 gap-space-sm lg:gap-space-md items-center hover:bg-surface-container-low/40 transition-colors" data-status="inprogress">
+<div class="col-span-2 flex items-center justify-between lg:justify-start lg:flex-col lg:items-start gap-1">
+<span class="font-label-md text-label-md font-bold text-primary">#IITD-8819</span>
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-label-sm font-label-sm font-bold uppercase tracking-wider">
+              Medium
+            </span>
+</div>
+<div class="col-span-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug">Rooftop Water Tank Overfill Valve Failure</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+              Karakoram Hostel — Terrace Block C
+            </p>
+<span class="inline-block mt-1 text-label-sm font-label-sm text-on-surface-variant">Reported 1h 14m ago • In Progress</span>
+</div>
+<div class="col-span-1 flex lg:justify-center items-center">
+<div class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>
+<span>19</span>
+</div>
+</div>
+<div class="col-span-3">
+<select class="w-full py-2 px-space-sm rounded-full bg-surface-container-low text-body-sm font-body-sm text-on-surface focus:outline-none shadow-sm cursor-pointer border-0">
+<option selected="">Assign to Ramesh K. (Plumber)</option>
+<option>Assign to Sunil K. (Electrician)</option>
+<option>Assign to Manoj Sharma (Lead)</option>
+<option>Unassigned</option>
+</select>
+</div>
+<div class="col-span-2 flex items-center justify-end gap-space-xs">
+<button class="px-space-sm py-1.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed hover:bg-tertiary-fixed-dim text-label-sm font-label-sm transition-all">
+              Resolved
+            </button>
+<button class="px-space-sm py-1.5 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high text-label-sm font-label-sm transition-all">
+              Re-assign
+            </button>
+</div>
+</div>
+<!-- Ticket 3 (Unassigned / Urgent) -->
+<div class="ticket-row p-space-md lg:px-space-lg lg:py-space-md grid grid-cols-1 lg:grid-cols-12 gap-space-sm lg:gap-space-md items-center hover:bg-surface-container-low/40 transition-colors" data-status="unassigned">
+<div class="col-span-2 flex items-center justify-between lg:justify-start lg:flex-col lg:items-start gap-1">
+<span class="font-label-md text-label-md font-bold text-primary">#IITD-8815</span>
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-error-container text-on-error-container text-label-sm font-label-sm font-bold uppercase tracking-wider">
+              Urgent
+            </span>
+</div>
+<div class="col-span-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug">Mess Cold Storage Temp Regulator Malfunction</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+              Kailash Hostel — Central Pantry Kitchen
+            </p>
+<span class="inline-block mt-1 text-label-sm font-label-sm text-error font-bold">Needs immediate dispatch technician</span>
+</div>
+<div class="col-span-1 flex lg:justify-center items-center">
+<div class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>
+<span>56</span>
+</div>
+</div>
+<div class="col-span-3">
+<select class="w-full py-2 px-space-sm rounded-full bg-error-container/40 text-body-sm font-body-sm text-on-error-container font-semibold focus:outline-none shadow-sm cursor-pointer border-0">
+<option disabled="" selected="">Unassigned — Select Worker</option>
+<option>Assign to Sunil K. (Electrician)</option>
+<option>Assign to Manoj Sharma (Lead)</option>
+<option>Assign to Ramesh K. (Plumber)</option>
+</select>
+</div>
+<div class="col-span-2 flex items-center justify-end gap-space-xs">
+<button class="px-space-md py-1.5 rounded-full bg-primary text-on-primary hover:bg-primary-container text-label-sm font-label-sm shadow-sm transition-all">
+              Dispatch
+            </button>
+<button class="p-1.5 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high transition-all" title="More details">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Ticket 4 (Pending Verification / Low) -->
+<div class="ticket-row p-space-md lg:px-space-lg lg:py-space-md grid grid-cols-1 lg:grid-cols-12 gap-space-sm lg:gap-space-md items-center hover:bg-surface-container-low/40 transition-colors" data-status="pending">
+<div class="col-span-2 flex items-center justify-between lg:justify-start lg:flex-col lg:items-start gap-1">
+<span class="font-label-md text-label-md font-bold text-primary">#IITD-8809</span>
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant text-label-sm font-label-sm font-bold uppercase tracking-wider">
+              Low
+            </span>
+</div>
+<div class="col-span-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug">Study Room Reading Lamp Buzz &amp; Socket Loose</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+              Nilgiri Hostel — 2nd Floor Common Library
+            </p>
+<span class="inline-block mt-1 text-label-sm font-label-sm text-tertiary">Work completed • Resident verification requested</span>
+</div>
+<div class="col-span-1 flex lg:justify-center items-center">
+<div class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>
+<span>8</span>
+</div>
+</div>
+<div class="col-span-3">
+<div class="text-body-sm font-body-sm text-on-surface-variant flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-secondary-fixed flex items-center justify-center font-bold text-label-sm text-on-secondary-fixed">SK</div>
+<span>Sunil K. (Electrician)</span>
+</div>
+</div>
+<div class="col-span-2 flex items-center justify-end gap-space-xs">
+<button class="px-space-sm py-1.5 rounded-full bg-tertiary text-on-tertiary hover:opacity-90 text-label-sm font-label-sm transition-all">
+              Verify &amp; Close
+            </button>
+<button class="px-space-sm py-1.5 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high text-label-sm font-label-sm transition-all">
+              Re-open
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PANEL B: CAMPUS STAFF, WARDENS & ROLE PERMISSIONS -->
+<section class="hidden flex-col space-y-space-lg transition-opacity" id="panelPeople">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md bg-surface-container-low p-space-lg rounded-xl">
+<div class="space-y-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Manage People &amp; Authority</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Grant co-admin privileges, assign specialized worker trades, and designate student stewards for dorm accountability.
+        </p>
+</div>
+<button class="inline-flex items-center justify-center gap-space-xs px-space-lg py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-md hover:bg-primary-container transition-all whitespace-nowrap" id="addStaffModalBtn">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+        + Add New Staff or Assign Co-Admin
+      </button>
+</div>
+<!-- User Roster -->
+<div class="rounded-xl bg-surface-container-lowest shadow-md overflow-hidden divide-y divide-surface-container">
+<!-- Person 1: Manoj Sharma -->
+<div class="p-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md hover:bg-surface-container-low/40 transition-colors">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-bold text-headline-sm">
+            MS
+          </div>
+<div>
+<div class="flex items-center gap-space-sm">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Manoj Sharma</h4>
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-label-sm font-label-sm font-bold">
+                Worker
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Role: <span class="font-semibold text-on-surface">Head Electrician</span> • Shift: Morning (07:00 - 15:30) • 92 Closed Tickets
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-1.5 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high text-label-md font-label-md transition-all">
+            Edit Permissions
+          </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-high text-on-surface hover:bg-surface-container-highest text-label-md font-label-md transition-all">
+            Reassign Trade
+          </button>
+</div>
+</div>
+<!-- Person 2: Dr. Ananya Sundaram -->
+<div class="p-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md hover:bg-surface-container-low/40 transition-colors">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary font-bold text-headline-sm">
+            AS
+          </div>
+<div>
+<div class="flex items-center gap-space-sm">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Dr. Ananya Sundaram</h4>
+<span class="px-space-sm py-0.5 rounded-full bg-primary-container text-on-primary-container text-label-sm font-label-sm font-bold">
+                Campus Admin
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Role: <span class="font-semibold text-on-surface">Registrar Lead</span> • Full Estate Oversight • Escalation Arbiter
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="px-space-md py-1.5 rounded-full bg-surface-container-low text-on-surface-variant text-label-md font-label-md">
+            Super Administrator
+          </span>
+</div>
+</div>
+<!-- Person 3: Ramesh Kumar -->
+<div class="p-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md hover:bg-surface-container-low/40 transition-colors">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-secondary-container/50 flex items-center justify-center text-on-secondary-container font-bold text-headline-sm">
+            RK
+          </div>
+<div>
+<div class="flex items-center gap-space-sm">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Ramesh Kumar</h4>
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-label-sm font-label-sm font-bold">
+                Worker
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Role: <span class="font-semibold text-on-surface">Lead Plumber</span> • Hydraulic Systems • Active in Girnar &amp; Nilgiri
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed hover:bg-primary-fixed-dim text-label-md font-label-md font-bold transition-all">
+            Change to Senior Lead
+          </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high text-label-md font-label-md transition-all">
+            View Schedule
+          </button>
+</div>
+</div>
+<!-- Person 4: Aarav Sharma -->
+<div class="p-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md hover:bg-surface-container-low/40 transition-colors">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface font-bold text-headline-sm">
+            AS
+          </div>
+<div>
+<div class="flex items-center gap-space-sm">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Aarav Sharma</h4>
+<span class="px-space-sm py-0.5 rounded-full bg-tertiary-fixed-dim text-on-tertiary-fixed text-label-sm font-label-sm font-bold">
+                Student Steward
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Role: <span class="font-semibold text-on-surface">Wing 2 Rep (Zanskar)</span> • Student Governance Liaison
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-1.5 rounded-full bg-primary text-on-primary hover:bg-primary-container text-label-md font-label-md transition-all shadow-sm">
+            Promote to Co-Admin
+          </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high text-label-md font-label-md transition-all">
+            Steward Log
+          </button>
+</div>
+</div>
+<!-- Person 5: Meera R. -->
+<div class="p-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md hover:bg-surface-container-low/40 transition-colors">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface font-bold text-headline-sm">
+            MR
+          </div>
+<div>
+<div class="flex items-center gap-space-sm">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Meera R.</h4>
+<span class="px-space-sm py-0.5 rounded-full bg-tertiary-fixed-dim text-on-tertiary-fixed text-label-sm font-label-sm font-bold">
+                Resident Rep
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Role: <span class="font-semibold text-on-surface">Mess Committee</span> • Hygiene &amp; Facilities Auditor
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-1.5 rounded-full bg-primary text-on-primary hover:bg-primary-container text-label-md font-label-md transition-all shadow-sm">
+            Promote to Co-Admin
+          </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high text-label-md font-label-md transition-all">
+            Audit Rights
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Campus Broadcast Modal Backdrop & Dialog -->
+<div class="fixed inset-0 z-50 bg-on-surface/40 backdrop-blur-sm hidden items-center justify-center p-space-md" id="broadcastModal">
+<div class="bg-surface-container-lowest rounded-xl max-w-lg w-full p-space-xl shadow-2xl relative">
+<div class="flex items-start justify-between mb-space-md">
+<div class="flex items-center gap-space-sm text-error">
+<span class="material-symbols-outlined text-[28px]">crisis_alert</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Push Emergency Campus Alert</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Instant broadcast to all resident dashboards &amp; SMS relays</p>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high" id="closeBroadcastModal">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="space-y-space-md">
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-1">Alert Scope</label>
+<select class="w-full px-space-md py-2.5 rounded-full bg-surface-container-low text-body-sm font-body-sm text-on-surface focus:outline-none">
+<option>All IIT Delhi Hostels (Campus-wide)</option>
+<option>Aravali &amp; Karakoram Cluster</option>
+<option>Nilgiri &amp; Kailash Cluster</option>
+<option>Academic East Infrastructure Only</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-1">Alert Message Header</label>
+<input class="w-full px-space-md py-2.5 rounded-full bg-surface-container-low text-body-sm font-body-sm text-on-surface focus:outline-none" placeholder="e.g., Scheduled Power Interruption for Transformer Overhaul" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-1">Details &amp; Actionable Advice</label>
+<textarea class="w-full p-space-md rounded-2xl bg-surface-container-low text-body-sm font-body-sm text-on-surface focus:outline-none resize-none" placeholder="Specify duration, backup power stations, and technician contacts..." rows="3"></textarea>
+</div>
+</div>
+<div class="mt-space-lg flex items-center justify-end gap-space-sm">
+<button class="px-space-lg py-2.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high" id="cancelBroadcastModal">
+          Cancel
+        </button>
+<button class="px-space-xl py-2.5 rounded-full bg-error text-on-error font-label-md text-label-md shadow-md hover:opacity-90" id="sendBroadcastBtn">
+          Transmit Broadcast
+        </button>
+</div>
+</div>
+</div>
+<!-- Interactive JavaScript logic -->
+<script>
+    (function initAdminConsole() {
+      // Tab switching
+      const tabQueueBtn = document.getElementById('tabQueueBtn');
+      const tabPeopleBtn = document.getElementById('tabPeopleBtn');
+      const panelQueue = document.getElementById('panelQueue');
+      const panelPeople = document.getElementById('panelPeople');
+
+      function switchTabs(activeTab) {
+        if (activeTab === 'queue') {
+          tabQueueBtn.className = 'px-space-lg py-2 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-sm transition-all flex items-center gap-space-xs';
+          tabPeopleBtn.className = 'px-space-lg py-2 rounded-full bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-all flex items-center gap-space-xs';
+          panelQueue.classList.remove('hidden');
+          panelPeople.classList.add('hidden');
+        } else {
+          tabPeopleBtn.className = 'px-space-lg py-2 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-sm transition-all flex items-center gap-space-xs';
+          tabQueueBtn.className = 'px-space-lg py-2 rounded-full bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-all flex items-center gap-space-xs';
+          panelPeople.classList.remove('hidden');
+          panelQueue.classList.add('hidden');
+        }
+      }
+
+      tabQueueBtn.addEventListener('click', () => switchTabs('queue'));
+      tabPeopleBtn.addEventListener('click', () => switchTabs('people'));
+
+      // Filter tabs in dispatch queue
+      const filterPills = document.querySelectorAll('.filter-pill');
+      const ticketRows = document.querySelectorAll('.ticket-row');
+
+      filterPills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          filterPills.forEach(p => {
+            p.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+            p.classList.add('bg-surface-container-low', 'text-on-surface');
+          });
+          pill.classList.remove('bg-surface-container-low', 'text-on-surface');
+          pill.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+
+          const filterVal = pill.getAttribute('data-filter');
+          ticketRows.forEach(row => {
+            if (filterVal === 'all') {
+              row.style.display = 'grid';
+            } else {
+              const rowStatus = row.getAttribute('data-status');
+              row.style.display = (rowStatus === filterVal) ? 'grid' : 'none';
+            }
+          });
+        });
+      });
+
+      // Broadcast Alert Modal trigger
+      const broadcastModal = document.getElementById('broadcastModal');
+      const broadcastTrigger = document.getElementById('broadcastModalTrigger');
+      const closeBroadcast = document.getElementById('closeBroadcastModal');
+      const cancelBroadcast = document.getElementById('cancelBroadcastModal');
+      const sendBroadcast = document.getElementById('sendBroadcastBtn');
+
+      function openModal() {
+        broadcastModal.classList.remove('hidden');
+        broadcastModal.classList.add('flex');
+      }
+      function closeModal() {
+        broadcastModal.classList.add('hidden');
+        broadcastModal.classList.remove('flex');
+      }
+
+      broadcastTrigger.addEventListener('click', openModal);
+      closeBroadcast.addEventListener('click', closeModal);
+      cancelBroadcast.addEventListener('click', closeModal);
+      sendBroadcast.addEventListener('click', () => {
+        alert('Alert successfully transmitted to IIT Delhi Campus relays.');
+        closeModal();
+      });
+
+      // Modal trigger for New Staff
+      const addStaffBtn = document.getElementById('addStaffModalBtn');
+      if (addStaffBtn) {
+        addStaffBtn.addEventListener('click', () => {
+          const name = prompt('Enter staff full name:');
+          if (name) {
+            alert('Invitation sent to ' + name + '@iitd.ac.in with role allocation credentials.');
+          }
+        });
+      }
+    })();
+  </script>
+</div></div></main><footer class="relative z-10 w-full mt-space-xl py-space-lg px-gutter-mobile md:px-margin"><div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left"><div class="flex items-center gap-space-sm"><div class="w-7 h-7 rounded-full bg-surface-container-lowest/40 flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[16px]">verified</span></div><div><p class="font-headline-sm text-headline-sm text-on-surface">CampusConnect Civic Governance</p><p class="font-body-sm text-body-sm text-on-surface-variant">Transparent Dormitory &amp; Campus Incident Accountability</p></div></div><p class="font-label-sm text-label-sm text-on-surface-variant">© 2025 CampusConnect Framework. Built for Institutional Living.</p></div></footer></body></html>
